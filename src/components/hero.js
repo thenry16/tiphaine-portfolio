@@ -114,7 +114,7 @@ export default class Hero extends React.Component {
         <FrontPageHeader>
           <LogoWrapper>
             <Name>Tiphaine Henry</Name>
-            <Role>Data Scientist & Engineer</Role>
+            <Role>Data Sciences & Engineering Student</Role>
           </LogoWrapper>
           <SocialIconWrapper>
             <SocialLink href="https://www.linkedin.com/in/tiphainehenry">
@@ -124,13 +124,13 @@ export default class Hero extends React.Component {
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path
+                {/* <path
                   d="M12.478 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.13-.477-4.402-1.292 1.524.18 3.045-.244 4.252-1.19-1.256-.022-2.317-.853-2.684-1.994.45.086.895.06 1.298-.05-1.38-.277-2.335-1.52-2.304-2.852.388.215.83.344 1.3.36-1.278-.856-1.64-2.545-.888-3.836 1.416 1.738 3.533 2.88 5.92 3-.42-1.795.944-3.526 2.8-3.526.824 0 1.57.35 2.095.907.654-.128 1.27-.368 1.824-.697-.214.67-.67 1.233-1.262 1.59.58-.07 1.135-.225 1.65-.454-.385.578-.87 1.084-1.434 1.49z"
                   fillRule="nonzero"
-                />
+                /> */}
               </SocialIcon>
             </SocialLink>
-            <SocialLink href="https://dribbble.com/gabdorf">
+            {/* <SocialLink href="https://dribbble.com/gabdorf">
               <SocialIcon
                 width="48"
                 height="48"
@@ -142,7 +142,7 @@ export default class Hero extends React.Component {
                   fillRule="nonzero"
                 />
               </SocialIcon>
-            </SocialLink>
+            </SocialLink> */}
             <SocialLink href="mailto:tiphaine.henry@aol.com">
               <SocialIcon
                 width="48"

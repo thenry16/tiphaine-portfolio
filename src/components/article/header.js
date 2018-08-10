@@ -65,10 +65,10 @@ const ArticleHeader = ({ props }) => ({
       <div>
         <ArticleHeaderSection>
           <LogoLink to="/">
-            <Logo>Gabriel Adorf</Logo>
+            <Logo>Tiphaine kokl Henry</Logo>
           </LogoLink>
           <SocialIconWrapper>
-            <SocialLink href="https://twitter.com/gabdorf">
+            <SocialLink href="https://www.linkedin.com/in/tiphainehenry">
               <SocialIcon
                 width="34"
                 height="32"
@@ -94,7 +94,7 @@ const ArticleHeader = ({ props }) => ({
                 />
               </SocialIcon>
             </SocialLink>
-            <SocialLink href="mailto:gabriel.adorf@gmail.com">
+            <SocialLink href="mailto:tiphaine.henry@aol.com">
               <SocialIcon
                 width="32"
                 height="32"

@@ -27,15 +27,15 @@ const LogoWrapper = styled.div`
 
 const Name = styled.h1`
   font-family: 'bebasneue', Helvetica, sans-serif;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 25px;
+  line-height: 45px;
   text-align: center;
   margin: 0;
   @media (min-width: 500px) {
     font-size: 70px;
   }
   @media (min-width: 768px) {
-    font-size: 80px;
+    font-size: 50px;
     text-align: left;
   }
 `
@@ -44,6 +44,7 @@ const Role = styled.div`
   font-size: 1.2em;
   line-height: 1em;
   text-align: center;
+  padding-left: 2px;
   @media (min-width: 768px) {
     text-align: left;
   }
@@ -112,11 +113,11 @@ export default class Hero extends React.Component {
       <HeroSection>
         <FrontPageHeader>
           <LogoWrapper>
-            <Name>Gabriel Adorf</Name>
-            <Role>Product Design</Role>
+            <Name>Tiphaine Henry</Name>
+            <Role>Data Scientist & Engineer</Role>
           </LogoWrapper>
           <SocialIconWrapper>
-            <SocialLink href="https://twitter.com/gabdorf">
+            <SocialLink href="https://www.linkedin.com/in/tiphainehenry">
               <SocialIcon
                 width="50"
                 height="48"
@@ -142,7 +143,7 @@ export default class Hero extends React.Component {
                 />
               </SocialIcon>
             </SocialLink>
-            <SocialLink href="mailto:gabriel.adorf@gmail.com">
+            <SocialLink href="mailto:tiphaine.henry@aol.com">
               <SocialIcon
                 width="48"
                 height="48"

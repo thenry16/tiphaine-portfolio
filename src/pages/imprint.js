@@ -14,18 +14,18 @@ const Imprint = () => ({
         <ContentWrapper>
           <h2>Angaben gemäß § 5 TMG</h2>
           <p>
-            Gabriel Adorf<br />
-            Isländische Str. 7<br />
-            10439 Berlin
+            Tiphaine Henry<br />
+            49 rue Lafond<br />
+            35700 Rennes
           </p>
-          <h3>Kontakt</h3>
+          <h3>Contact</h3>
           <p>
-            Telefon: +49 1573 7654 210<br />
-            E-Mail: gabriel.adorf[ääät]gmail.com
+            Tel: +33 638 769 842 <br />
+            E-Mail: tiphaine.henry@aol.com
           </p>
           <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
           <p>
-            Gabriel Adorf<br />
+            Tiphaine Henry<br />
             <i>Quelle: Impressumgenerator von www.e-recht24.de</i>
           </p>
           <h2>Haftungsausschluss</h2>

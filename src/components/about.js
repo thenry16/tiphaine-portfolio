@@ -35,20 +35,21 @@ export default class About extends React.Component {
           <ColorBar color="#FFA6A6" />
           <p>
             <strong>
-              Hi. I'm Gabriel, an interface and UX designer based
-              in&nbsp;Berlin.
+              Hi. I'm Tiphaine, a data scientist and IT engineer based in&nbsp;Nantes, France.
             </strong>
           </p>
           <p>
-            I studied business & engineering at the Technical University and
-            soon after graduation rediscovered my passion for design.
+            I study business & engineering at the Institut Mines Telecom Atlantique. 
+            I developped a passion for AI and Data Sciences during an exchange with the University
+            of California, San Diego. 
           </p>
           <p style={{ marginBottom: 0 }}>
             Since then I have always tried to balance the understanding of the
-            technical aspects of creating products with the aesthetic and
-            usability requirements from a user's point of view. Currently I am
-            working with <Link to="/lifetime">LifeTime</Link>, raising a child
-            and learning how to&nbsp;code.
+            technical aspects of AI with the social and economic impacts at stake from a company's point of view. 
+            I am currently getting ready for a thesis in Data Sciences, working on Machine Learning thematics.
+          </p>
+          <p>  
+            I thrive on creative challenges and enjoy building strong relationships along the way. Explore my work below, and contact me directly to learn more!
           </p>
         </Column>
       </Row>

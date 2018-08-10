@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gabriel Adorf`
+    title: `Tiphaine Henry`
   },
   plugins: [
     `gatsby-transformer-yaml`,

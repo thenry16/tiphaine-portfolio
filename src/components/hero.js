@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-
+import Scrollchor from 'react-scrollchor'
 import Spirograph from '../components/spirograph'
 
 const HeroSection = styled.div`height: 100vh;`
@@ -116,20 +116,25 @@ export default class Hero extends React.Component {
             <Name>Tiphaine Henry</Name>
             <Role>Data Sciences & Engineering Student</Role>
           </LogoWrapper>
-          <SocialIconWrapper>
-            <SocialLink href="https://www.linkedin.com/in/tiphainehenry">
+           <SocialIconWrapper>
+           {/* <SocialLink href="https://www.linkedin.com/in/tiphainehenry">
               <SocialIcon
                 width="50"
                 height="48"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
+              <path
+                  d="M 48.875,0 C 21.882,0 0,21.882 0,48.875 0,75.868 21.882,97.75 48.875,97.75 75.868,97.75 97.75,75.868 97.75,48.875 97.75,21.882 75.868,0 48.875,0 Z M 30.562,81.966 H 16.822 V 37.758 h 13.74 V 81.966 Z M 23.695,31.715 c -4.404,0 -7.969,-3.57 -7.969,-7.968 10e-4,-4.394 3.565,-7.964 7.969,-7.964 4.392,0 7.962,3.57 7.962,7.964 0,4.399 -3.571,7.968 -7.962,7.968 z M 82.023,81.966 H 68.294 V 60.467 c 0,-5.127 -0.095,-11.721 -7.142,-11.721 -7.146,0 -8.245,5.584 -8.245,11.35 V 81.965 H 39.179 V 37.758 h 13.178 v 6.041 h 0.185 c 1.835,-3.476 6.315,-7.14 13,-7.14 13.913,0 16.481,9.156 16.481,21.059 z"
+                  fillRule="nonzero"
+                  /> 
+
                 {/* <path
                   d="M12.478 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.13-.477-4.402-1.292 1.524.18 3.045-.244 4.252-1.19-1.256-.022-2.317-.853-2.684-1.994.45.086.895.06 1.298-.05-1.38-.277-2.335-1.52-2.304-2.852.388.215.83.344 1.3.36-1.278-.856-1.64-2.545-.888-3.836 1.416 1.738 3.533 2.88 5.92 3-.42-1.795.944-3.526 2.8-3.526.824 0 1.57.35 2.095.907.654-.128 1.27-.368 1.824-.697-.214.67-.67 1.233-1.262 1.59.58-.07 1.135-.225 1.65-.454-.385.578-.87 1.084-1.434 1.49z"
                   fillRule="nonzero"
-                /> */}
-              </SocialIcon>
-            </SocialLink>
+            //     /> */} 
+    {/*         //   </SocialIcon>
+            // </SocialLink> */}
             {/* <SocialLink href="https://dribbble.com/gabdorf">
               <SocialIcon
                 width="48"
@@ -143,7 +148,7 @@ export default class Hero extends React.Component {
                 />
               </SocialIcon>
             </SocialLink> */}
-            <SocialLink href="mailto:tiphaine.henry@aol.com">
+            <SocialLink href="mailto:tiphaine.henry@etudiant.mines-nantes.fr">
               <SocialIcon
                 width="48"
                 height="48"

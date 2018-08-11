@@ -6,7 +6,7 @@ import ColorBar from '../components/colorbar'
 
 import Project from '../components/project'
 
-import KellerkindLogo from '../img/kellerkindlogo'
+import MoveSafeLogo from '../img/kellerkindlogo'
 import LifeTimeLogo from '../img/lifetimelogo'
 import BamLogo from '../img/bamlogo'
 
@@ -22,20 +22,20 @@ const Projects = () => ({
           <Project
             logo={LifeTimeLogo()}
             url="/lifetime"
-            title="LifeTime"
-            abstract="A digital health solution facilitating medical data exchange."
+            title="MoveSafe"
+            abstract="An interactive web app displaying the safest walking paths in California."
           />
           <Project
-            logo={KellerkindLogo()}
+            logo={MoveSafeLogo()}
             url="/kellerkind"
-            title="Kellerkind"
-            abstract="A social event company organizing two open air festivals with 15.000 yearly event visitors north of munich."
+            title="EasyEnos"
+            abstract="An Enos configurations management platform."
           />
           <Project
             logo={BamLogo()}
             url="/bam"
-            title="Bäm"
-            abstract="Climbing products and other stuff that gives you the bäm effect."
+            title="Data Analysis Projects"
+            abstract="A study of worldwide gases releases & a study of African countries recent development based on Tableau."
           />
         </Column>
       </Row>

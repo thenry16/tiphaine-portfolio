@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Page, Row, Column } from 'hedron'
 
 import ColorBar from '../components/colorbar'
-import ProfileImage from '../img/gabrieladorf.svg'
+import ProfileImage from '../img/tiphaine.jpg'
 
 const ProfileImageWrapper = styled.div`
   border: none;
@@ -35,21 +35,19 @@ export default class About extends React.Component {
           <ColorBar color="#FFA6A6" />
           <p>
             <strong>
-              Hi. I'm Tiphaine, a data scientist and IT engineer based in&nbsp;Nantes, France.
+              Hi. I'm Tiphaine, a data scientist and IT engineering student currently based in&nbsp;Nantes, France.
             </strong>
           </p>
           <p>
             I study business & engineering at the Institut Mines Telecom Atlantique. 
-            I developped a passion for AI and Data Sciences during an exchange with the University
-            of California, San Diego. 
-          </p>
-          <p style={{ marginBottom: 0 }}>
-            Since then I have always tried to balance the understanding of the
-            technical aspects of AI with the social and economic impacts at stake from a company's point of view. 
+            Captivated by AI and Data Sciences, I always try to balance the understanding of the
+            technical aspects of AI with its social and economic impacts. 
             I am currently getting ready for a thesis in Data Sciences, working on Machine Learning thematics.
+          {/* <p style={{ marginBottom: 0 }}> */}
           </p>
           <p>  
-            I thrive on creative challenges and enjoy building strong relationships along the way. Explore my work below, and contact me directly to learn more!
+            I thrive on creative challenges and enjoy building strong relationships along the way. 
+            Explore my work below, and contact me directly to learn more!
           </p>
         </Column>
       </Row>

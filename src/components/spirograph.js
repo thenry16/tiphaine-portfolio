@@ -5,13 +5,13 @@ import debounce from 'lodash/debounce'
 const CanvasDiv = styled.div`
   width: 50%;
   margin: auto;
-  height: 1000px;
+  height: 800px;
   z-index: -99;
 `
 
 const Canvas = styled.canvas`
   position: absolute;
-  top: 25vh;
+  top: 40vh;
   bottom: 0;
   left: 50%;
   right: 50%;

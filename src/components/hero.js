@@ -114,7 +114,7 @@ export default class Hero extends React.Component {
         <FrontPageHeader>
           <LogoWrapper>
             <Name>Tiphaine Henry</Name>
-            <Role>Data Sciences & Engineering Student</Role>
+            <Role>IT Engineering Student</Role>
           </LogoWrapper>
            <SocialIconWrapper>
            {/* <SocialLink href="https://www.linkedin.com/in/tiphainehenry">

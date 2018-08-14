@@ -10,32 +10,26 @@ import MoveSafeLogo from '../img/kellerkindlogo'
 import LifeTimeLogo from '../img/lifetimelogo'
 import BamLogo from '../img/bamlogo'
 
-const Projects = () => ({
+const Miscellaneous = () => ({
   render() {
     return (
       <Row>
         <Column xs={12} sm={12} md={12} lg={3} lgShift={1}>
-          <h2>Projects</h2>
+          <h2>Miscellaneous</h2>
           <ColorBar color="#A6FFD7" />
         </Column>
         <Column sm={12} md={9} lg={7}>
           <Project
             logo={LifeTimeLogo()}
-            url="/moveSafe"
-            title="MoveSafe"
-            abstract="An interactive web map displaying the safest walking paths within California."
+            url="/dataAnalysis"
+            title="Data Analysis Projects"
+            abstract="A study of gas releases worldwide & a study of African countries recent development based on Tableau."
           />
           <Project
             logo={BamLogo()}
-            url="/ISitsUWalk"
-            title="ISitsUWalk"
-            abstract="An Android AR app winner of UCSD's 2018 Hackaton. Give AR a chance to make you fit again!"
-          />
-          <Project
-            logo={MoveSafeLogo()}
-            url="/easyEnos"
-            title="EasyEnos"
-            abstract="An ergonomic platform for the management of Enos configurations files."
+            url="/dataAnalysis"
+            title="Challenge Disrupt'Campus"
+            abstract="Entrepreneurship Hackaton, First prize."
           />
         </Column>
       </Row>
@@ -43,4 +37,4 @@ const Projects = () => ({
   },
 })
 
-export default Projects
+export default Miscellaneous

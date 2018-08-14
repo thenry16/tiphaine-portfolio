@@ -10,10 +10,8 @@ import { Page, Row, Column } from 'hedron'
 import Hero from '../components/hero'
 import Section from '../components/section'
 import About from '../components/about'
-import Projects from '../components/projects'
-import Writing from '../components/contact'
-import Photo from '../components/photo'
-import Notes from '../components/notes'
+import Projects from '../components/Projects'
+import Contact from '../components/contact'
 import Footer from '../components/footer'
 
 import BebasNeueBoldWoff2 from '../fonts/bebasneuebold.woff2'
@@ -22,6 +20,8 @@ import CharterRegularWoff2 from '../fonts/charterregular.woff2'
 import CharterRegularWoff from '../fonts/charterregular.woff'
 import CharterBoldWoff2 from '../fonts/charterbold.woff2'
 import CharterBoldWoff from '../fonts/charterbold.woff'
+import Miscellaneous from '../components/Miscellaneous';
+
 
 injectGlobal`
   @font-face {
@@ -82,10 +82,8 @@ export default class App extends React.Component {
           <title>Tiphaine Henry</title>
           <meta name="description" content="Tiphaine Henry's projects" />
           <meta name="keywords" content="design, ux, ui, product, graphic, health, climbing, app, interface, experience, festival, techno, code" />
-          <meta property="og:image" content="https://www.gabrieladorf.com/static/kellerkindCover.14f87246.jpg" />
           <meta property="og:description" content="Tiphaine Henry's projects" />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://gabrieladorf.com" />
           <meta property="og:title" content="Tiphaine Henry" />
 
           <link
@@ -121,8 +119,12 @@ export default class App extends React.Component {
           </Section>
         </ScrollableAnchor>
         <Section>
-          <Writing />
+          <Miscellaneous />
         </Section>
+        <Section>
+          <Contact />
+        </Section>
+
         {/*        <Section>
           <Photo />
         </Section>

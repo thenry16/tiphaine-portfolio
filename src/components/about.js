@@ -35,13 +35,15 @@ export default class About extends React.Component {
           <ColorBar color="#FFA6A6" />
           <p>
             <strong>
-              Hi. I'm Tiphaine, a data scientist and IT engineering student currently based in&nbsp;Nantes, France.
+              Hi. I'm Tiphaine, a data scientist and IT engineering student studying at the 
+              Institut Mines Telecom Atlantique.
             </strong>
           </p>
           <p>
-            I study business & engineering at the Institut Mines Telecom Atlantique. 
-            Captivated by AI and Data Sciences, I always try to balance the understanding of the
-            technical aspects of AI with its social and economic impacts. 
+            Captivated by sciences, I always try to balance the understanding of technical 
+            applications and its social and economic impacts. 
+          </p>
+          <p>
             I am currently getting ready for a thesis in Data Sciences, working on Machine Learning thematics.
           {/* <p style={{ marginBottom: 0 }}> */}
           </p>

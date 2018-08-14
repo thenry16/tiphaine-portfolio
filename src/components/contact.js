@@ -10,7 +10,7 @@ const ContactInfo = styled.div`
   margin-bottom: 10vh;
   font-size:1.2em;`
 const Presentation = styled.div`margin-bottom: 3vh;`
-export default class Writing extends React.Component {
+export default class Contact extends React.Component {
   render() {
     return (
       <Row>

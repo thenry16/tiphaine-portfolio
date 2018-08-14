@@ -35,7 +35,7 @@ const Projects = () => ({
             logo={BamLogo()}
             url="/bam"
             title="Data Analysis Projects"
-            abstract="A study of worldwide gases releases & a study of African countries recent development based on Tableau."
+            abstract="A study of gas releases worldwide & a study of African countries recent development based on Tableau."
           />
         </Column>
       </Row>

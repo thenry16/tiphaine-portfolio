@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import ReadMore from '../components/readmore'
-import Logo from '../components/projectlogo'
+import ReadMore from './readmore'
+import Logo from './projectlogo'
 
 const ProjectWrapper = styled.div`
   padding-bottom: 80px;

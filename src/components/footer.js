@@ -22,7 +22,7 @@ export default class Footer extends React.Component {
     return (
       <FooterSection>
         <FooterText>
-          © 2018 Tiphaine Henry&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<FooterLink href="/imprint">Imprint</FooterLink>
+          © 2018 Tiphaine Henry&nbsp;&nbsp;&nbsp;
         </FooterText>
       </FooterSection>
     )

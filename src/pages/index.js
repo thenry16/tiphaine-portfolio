@@ -11,7 +11,7 @@ import Hero from '../components/hero'
 import Section from '../components/section'
 import About from '../components/about'
 import Projects from '../components/projects'
-import Writing from '../components/writing'
+import Writing from '../components/contact'
 import Photo from '../components/photo'
 import Notes from '../components/notes'
 import Footer from '../components/footer'
@@ -122,6 +122,9 @@ export default class App extends React.Component {
         </ScrollableAnchor>
         <Section>
           <Writing />
+        </Section>
+        {/*        <Section>
+          <Photo />
         </Section>
         {/*        ds<Section>
           <Photo />

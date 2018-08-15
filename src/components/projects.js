@@ -33,8 +33,8 @@ const Projects = () => ({
           />
           <Project
             logo={MoveSafeLogo()}
-            url="/easyEnos"
-            title="EasyEnos"
+            url="/autoEnos"
+            title="AutoEnos"
             abstract="An ergonomic platform for the management of Enos configurations files."
           />
         </Column>

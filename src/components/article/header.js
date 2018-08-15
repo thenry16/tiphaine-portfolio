@@ -58,6 +58,13 @@ const Title = styled.div`
   width: 100%;
   text-align: center;
 `
+const ColorDiv = styled.div`
+  background: #cdcdcd;
+  background-size: cover;
+  width: 100%;
+  height: 2vh;
+  margin-bottom:6.5vh;
+`
 
 const ArticleHeader = ({ props }) => ({
   render() {
@@ -83,6 +90,7 @@ const ArticleHeader = ({ props }) => ({
             </SocialLink>
           </SocialIconWrapper>
         </ArticleHeaderSection>
+        <ColorDiv></ColorDiv>
         <Link to="/">
           <BackArrow
             width="28"
@@ -104,6 +112,7 @@ const ArticleHeader = ({ props }) => ({
           </Title>
           <ColorBar color="#A6FFD7" />
         </Row>
+        <ColorDiv></ColorDiv>
       </div>
     )
   },

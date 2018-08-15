@@ -43,10 +43,6 @@ export default class About extends React.Component {
             Captivated by sciences, I always try to balance the understanding of technical 
             applications and its social and economic impacts. 
           </p>
-          <p>
-            I am currently getting ready for a thesis in Data Sciences, working on Machine Learning thematics.
-          {/* <p style={{ marginBottom: 0 }}> */}
-          </p>
           <p>  
             I thrive on creative challenges and enjoy building strong relationships along the way. 
             Explore my work below, and contact me directly to learn more!

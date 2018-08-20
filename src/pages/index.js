@@ -10,8 +10,10 @@ import { Page, Row, Column } from 'hedron'
 import Hero from '../components/hero'
 import Section from '../components/section'
 import About from '../components/about'
+import StartDiv from '../components/StartDiv'
 import Projects from '../components/Projects'
 import Contact from '../components/contact'
+import EndDiv from '../components/EndDiv'
 import Footer from '../components/footer'
 
 import BebasNeueBoldWoff2 from '../fonts/bebasneuebold.woff2'
@@ -118,12 +120,16 @@ export default class App extends React.Component {
             <Projects />
           </Section>
         </ScrollableAnchor>
+        <ScrollableAnchor id={'miscellaneous'}>
         <Section>
           <Miscellaneous />
         </Section>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'contact'}>
         <Section>
           <Contact />
         </Section>
+        </ScrollableAnchor>
 
         {/*        <Section>
           <Photo />

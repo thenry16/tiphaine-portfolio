@@ -26,29 +26,32 @@ const ProfileImageWrapper = styled.div`
 export default class About extends React.Component {
   render() {
     return (
-      <Row alignItems="flex-end">
-        <Column xs={12} sm={12} smShift={0} md={6} lg={5} lgShift={1}>
-          <ProfileImageWrapper />
-        </Column>
-        <Column xs={12} sm={12} smShift={0} md={6} lg={5}>
-          <h2>About</h2>
-          <ColorBar color="#FFA6A6" />
-          <p>
-            <strong>
-              Hi. I'm Tiphaine, a data scientist and IT engineering student studying at the 
-              Institut Mines Telecom Atlantique.
+      <div>
+        <Row alignItems="flex-end">
+          <Column xs={12} sm={12} smShift={0} md={6} lg={5} lgShift={1}>
+            <ProfileImageWrapper />
+          </Column>
+          <Column xs={12} sm={12} smShift={0} md={6} lg={5}>
+            <h2>About</h2>
+            <ColorBar color="#FFA6A6" />
+            <p>
+              <strong>
+                Hi. I'm Tiphaine, a data scientist and IT engineering student studying at the
+                Institut Mines Telecom Atlantique.
             </strong>
+            </p>
+            <p>
+              Captivated by sciences, I always try to balance the understanding of technical
+              applications and its social and economic impacts.
           </p>
-          <p>
-            Captivated by sciences, I always try to balance the understanding of technical 
-            applications and its social and economic impacts. 
+            <p>
+              I thrive on creative challenges and enjoy building strong relationships along the way.
+              Explore my work below, and contact me directly to learn more!
           </p>
-          <p>  
-            I thrive on creative challenges and enjoy building strong relationships along the way. 
-            Explore my work below, and contact me directly to learn more!
-          </p>
-        </Column>
-      </Row>
+          </Column>
+        </Row>
+        <scrollArrow id="#projects"/>
+      </div>
     )
   }
 }

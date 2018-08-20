@@ -5,7 +5,7 @@ import { Page, Row, Column } from 'hedron'
 const FooterSection = styled.div`
   color: #666;
   background: #222;
-  height: 15vh;
+  height: 20vh;
   padding-top: 55px;
   text-align: center;
   font-size: 0.9em;

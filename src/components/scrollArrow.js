@@ -4,15 +4,10 @@ import styled from 'styled-components'
 import ReadMore from './readmore'
 import Logo from './projectlogo'
 
-if (typeof window !== 'undefined') {
-  // Make scroll behavior of internal links smooth
-  // eslint-disable-next-line global-require
-  require('smooth-scroll')('a[href*="#"]');
-}
 
 const ArrowWrapper = styled.div`
   display: none;
-  position: absolute;
+  position: relative;
   bottom: 32px;
   @media (min-width: 500px) {
     display: block;
@@ -43,29 +38,12 @@ const Arrow = styled.svg`
   }
 `
 
-
 const scrollArrow = ({ props }) => ({
   render() {
-    let link
-    if (this.props.externalUrl) {
-      link = (
-        <a href={this.props.url}>
-          <ReadMore>
-            {this.props.readMoreText}
-          </ReadMore>
-        </a>
-      )
-    } else {
-      link = (
-        <Link to={this.props.url}>
-          <ReadMore />
-        </Link>
-      )
-    }
     return (
       <ArrowWrapper>
       <ArrowCenter>
-        <ArrowLink href={this.props.id}>
+        <ArrowLink href={props.id}>
           <Arrow
             width="100"
             height="100"

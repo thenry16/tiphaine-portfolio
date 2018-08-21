@@ -4,16 +4,15 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { injectGlobal } from 'styled-components'
 import ScrollableAnchor from 'react-scrollable-anchor'
+import scrollArrow from '../components/scrollArrow'
 
 import { Page, Row, Column } from 'hedron'
 
 import Hero from '../components/hero'
 import Section from '../components/section'
 import About from '../components/about'
-import StartDiv from '../components/StartDiv'
 import Projects from '../components/Projects'
 import Contact from '../components/contact'
-import EndDiv from '../components/EndDiv'
 import Footer from '../components/footer'
 
 import BebasNeueBoldWoff2 from '../fonts/bebasneuebold.woff2'
@@ -24,6 +23,11 @@ import CharterBoldWoff2 from '../fonts/charterbold.woff2'
 import CharterBoldWoff from '../fonts/charterbold.woff'
 import Miscellaneous from '../components/Miscellaneous';
 
+if (typeof window !== 'undefined') {
+  // Make scroll behavior of internal links smooth
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]');
+}
 
 injectGlobal`
   @font-face {
@@ -120,11 +124,11 @@ export default class App extends React.Component {
             <Projects />
           </Section>
         </ScrollableAnchor>
-        <ScrollableAnchor id={'miscellaneous'}>
+        {/* <ScrollableAnchor id={'miscellaneous'}>
         <Section>
           <Miscellaneous />
         </Section>
-        </ScrollableAnchor>
+        </ScrollableAnchor> */}
         <ScrollableAnchor id={'contact'}>
         <Section>
           <Contact />

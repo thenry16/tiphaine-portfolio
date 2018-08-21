@@ -4,20 +4,23 @@ import { Page, Row, Column } from 'hedron'
 
 import ColorBar from './colorbar'
 
-import Project from './project'
+import WebProj from './webProj'
 
 import MoveSafeLogo from '../img/kellerkindlogo'
 import LifeTimeLogo from '../img/lifetimelogo'
 import BamLogo from '../img/bamlogo'
+import scrollArrow from '../components/scrollArrow'
+
+
 const ArrowWrapper = styled.div`
   display: none;
-  position: absolute;
-  bottom: 32px;
+  position: relative;
+  bottom: 15px;
   @media (min-width: 500px) {
     display: block;
   }
   @media (min-width: 768px) {
-    bottom: 32px;
+    bottom: 15px;
   }
   width: 100%;
 `
@@ -41,53 +44,83 @@ const Arrow = styled.svg`
     visibility: visible;
   }
 `
+
+const StyledColumnTop = styled(Column)`
+  display: block-center;
+  box-sizing: border-box;
+  width: 30%;
+  margin-left: auto ;
+  margin-right: auto ;
+`;
+
+const StyledColumn = styled(Column)`
+  display: block-center;
+  box-sizing: border-box;
+  width: 20%;
+  margin-left: auto ;
+  margin-right: auto ;
+`;
+
+const StyledRow = styled(Row)`
+  margin-bottom:5vh;
+`
+
 const Projects = () => ({
   render() {
     return (
       <div>
+       <div> 
       <Row>
-        <Column xs={12} sm={12} md={12} lg={3} lgShift={1}>
+        <StyledColumnTop>
           <h2>Web Projects</h2>
           <ColorBar color="#A6FFD7" />
-        </Column>
-        <Column sm={12} md={9} lg={7}>
-          <Project
+        </StyledColumnTop>
+      </Row>
+      <Row>  
+        <StyledColumn>
+          <WebProj
             logo={LifeTimeLogo()}
             url="/moveSafe"
             title="MoveSafe"
             abstract="An interactive web map displaying the safest walking paths within California."
           />
-          <Project
+        </StyledColumn> 
+        <StyledColumn> 
+          <WebProj
             logo={MoveSafeLogo()}
             url="/autoEnos"
             title="AutoEnos"
             abstract="An ergonomic platform for the management of Enos configurations files."
           />
-          <Project
+        </StyledColumn> 
+        <StyledColumn> 
+          <WebProj
             logo={BamLogo()}
             url="/ISitsUWalk"
             title="ISitsUWalk"
             abstract="An Android AR app winner of UCSD's 2018 Hackaton. Give AR a chance to make you fit again!"
           />
-        </Column>
+        </StyledColumn>
       </Row>
+      </div>
       <ArrowWrapper>
-        <ArrowCenter>
-          <ArrowLink href="#miscellaneous">
-            <Arrow
-              width="100"
-              height="100"
-              viewBox="-32 -40 100 100"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
-                fillRule="nonzero"
-              />
-            </Arrow>
-          </ArrowLink>
-        </ArrowCenter>
-      </ArrowWrapper>
+      <ArrowCenter>
+        {/* <ArrowLink href='#miscellaneous'> */}
+        <ArrowLink href='#contact'>
+          <Arrow
+            width="100"
+            height="100"
+            viewBox="-32 -40 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
+              fillRule="nonzero"
+            />
+          </Arrow>
+        </ArrowLink>
+      </ArrowCenter>
+    </ArrowWrapper>
       </div>
     )
   },

@@ -15,10 +15,12 @@
     "gatsby-transformer-yaml": "^1.5.7",
     "hedron": "^0.7.1",
     "lodash": "^4.17.4",
+    "react-anchor-link-smooth-scroll": "^1.0.11",
     "react-columns": "^1.2.0",
     "react-native": "^0.56.0",
     "react-scrollable-anchor": "^0.5.0",
-    "react-scrollchor": "^6.0.0"
+    "react-scrollchor": "^6.0.0",
+    "smooth-scroll": "^14.2.1"
   },
   "keywords": [
     "gatsby"

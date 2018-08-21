@@ -5,6 +5,8 @@ import ContentWrapper from '../components/article/contentwrapper'
 import Footer from '../components/footer'
 import Link from 'gatsby-link'
 import { Page, Row, Column } from 'hedron'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 const EmbedContainer = styled.div`
   position: relative;
@@ -135,13 +137,43 @@ line-height: 1.1;`
 const Wrapper = styled.div`
   margin-bottom:5vh; 
 `
+const ArrowWrapper = styled.div`
+  display: none;
+  position: absolute;
+  bottom: 32px;
+  @media (min-width: 500px) {
+    display: block;
+  }
+  @media (min-width: 768px) {
+    bottom: 32px;
+  }
+  width: 100%;
+`
 
+const ArrowCenter = styled.div`
+  margin: 0 auto;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+`
+
+const ArrowLink = styled.a`display: block;`
+
+const Arrow = styled.svg`
+  visibility: hidden;
+  fill: #dcdcdc;
+  :hover {
+    fill: #555;
+  }
+  @media (min-width: 500px) {
+    visibility: visible;
+  }
+`
 const MoveSafe = () => ({
   render() {
     return (
       <div>
         <Header title="MoveSafe" />
-
         <ContentWrapper>
           <h3 id="toc_0">Guiding you through every walk!</h3>
 
@@ -178,6 +210,7 @@ const MoveSafe = () => ({
               </p>
             </Frame> */}
         </ContentWrapper>
+    
         <ContentWrapper>
           <h3 id="toc_2">
             The Creation Process
@@ -260,6 +293,7 @@ const MoveSafe = () => ({
             A work still needs to be done on exporting the algorithm and standardizing it to other States / countries.
           </p>
         </ContentWrapper>
+       
         <Wrapper />
 
         <StyledColumn>

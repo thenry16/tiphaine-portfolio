@@ -12,13 +12,13 @@ import LifeTimeLogo from '../img/lifetimelogo'
 import BamLogo from '../img/bamlogo'
 const ArrowWrapper = styled.div`
   display: none;
-  position: absolute;
-  bottom: 32px;
+  position: relative;
+  bottom: 16px;
   @media (min-width: 500px) {
     display: block;
   }
   @media (min-width: 768px) {
-    bottom: 32px;
+    bottom: 16px;
   }
   width: 100%;
 `
@@ -67,22 +67,22 @@ const Miscellaneous = () => ({
         </Column>
       </Row>
       <ArrowWrapper>
-        <ArrowCenter>
-          <ArrowLink href="#contact">
-            <Arrow
-              width="100"
-              height="100"
-              viewBox="-32 -40 100 100"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
-                fillRule="nonzero"
-              />
-            </Arrow>
-          </ArrowLink>
-        </ArrowCenter>
-      </ArrowWrapper>
+      <ArrowCenter>
+        <ArrowLink href='#contact'>
+          <Arrow
+            width="100"
+            height="100"
+            viewBox="-32 -40 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
+              fillRule="nonzero"
+            />
+          </Arrow>
+        </ArrowLink>
+      </ArrowCenter>
+    </ArrowWrapper>
       </div>
     )
   },

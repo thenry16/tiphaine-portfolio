@@ -15,12 +15,12 @@ import scrollArrow from '../components/scrollArrow'
 const ArrowWrapper = styled.div`
   display: none;
   position: relative;
-  top: 12px;
+  top: 18px;
   @media (min-width: 500px) {
     display: block;
   }
   @media (min-width: 768px) {
-    top: 12px;
+    top: 18px;
   }
   width: 100%;
 `

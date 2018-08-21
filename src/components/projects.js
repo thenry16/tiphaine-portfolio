@@ -15,12 +15,12 @@ import scrollArrow from '../components/scrollArrow'
 const ArrowWrapper = styled.div`
   display: none;
   position: relative;
-  bottom: 15px;
+  top: 12px;
   @media (min-width: 500px) {
     display: block;
   }
   @media (min-width: 768px) {
-    bottom: 15px;
+    top: 12px;
   }
   width: 100%;
 `
@@ -59,6 +59,7 @@ const StyledColumn = styled(Column)`
   width: 20%;
   margin-left: auto ;
   margin-right: auto ;
+  background-color:#A6FFD7;
 `;
 
 const StyledRow = styled(Row)`

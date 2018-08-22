@@ -113,7 +113,9 @@ export default class App extends React.Component {
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="theme-color" content="#ffffff" />
         </Helmet>
-        <Hero />
+        <ScrollableAnchor id={'home'}>
+          <Hero />
+        </ScrollableAnchor>
         <ScrollableAnchor id={'about'}>
           <Section>
             <About />

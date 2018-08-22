@@ -53,15 +53,30 @@ const StyledColumnTop = styled(Column)`
   margin-right: auto ;
 `;
 
-const StyledColumn = styled(Column)`
+const StyledColumn1 = styled(Column)`
   display: block-center;
   box-sizing: border-box;
   width: 20%;
   margin-left: auto ;
   margin-right: auto ;
-  background-color:#A6FFD7;
+  background-color:	#f9f9f9;
 `;
-
+const StyledColumn2 = styled(Column)`
+  display: block-center;
+  box-sizing: border-box;
+  width: 20%;
+  margin-left: auto ;
+  margin-right: auto ;
+  background-color:#fffcda;
+`;
+const StyledColumn3 = styled(Column)`
+  display: block-center;
+  box-sizing: border-box;
+  width: 20%;
+  margin-left: auto ;
+  margin-right: auto ;
+  background-color:#e0feff;
+`;
 const StyledRow = styled(Row)`
   margin-bottom:5vh;
 `
@@ -74,34 +89,34 @@ const Projects = () => ({
       <Row>
         <StyledColumnTop>
           <h2>Web Projects</h2>
-          <ColorBar color="#A6FFD7" />
+          <ColorBar color="#fff398" />
         </StyledColumnTop>
       </Row>
       <Row>  
-        <StyledColumn>
+        <StyledColumn1>
           <WebProj
             logo={LifeTimeLogo()}
             url="/moveSafe"
             title="MoveSafe"
             abstract="An interactive web map displaying the safest walking paths within California."
           />
-        </StyledColumn> 
-        <StyledColumn> 
+        </StyledColumn1> 
+        <StyledColumn2> 
           <WebProj
             logo={MoveSafeLogo()}
             url="/autoEnos"
             title="AutoEnos"
             abstract="An ergonomic platform for the management of Enos configurations files."
           />
-        </StyledColumn> 
-        <StyledColumn> 
+        </StyledColumn2> 
+        <StyledColumn3> 
           <WebProj
             logo={BamLogo()}
             url="/ISitsUWalk"
             title="ISitsUWalk"
             abstract="An Android AR app winner of UCSD's 2018 Hackaton. Give AR a chance to make you fit again!"
           />
-        </StyledColumn>
+        </StyledColumn3>
       </Row>
       </div>
       <ArrowWrapper>

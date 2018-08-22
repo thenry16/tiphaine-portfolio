@@ -73,7 +73,7 @@ export default class About extends React.Component {
                 Institut Mines Telecom Atlantique.
             </strong>
             </p>
-{/*             <p>
+            {/*             <p>
               Captivated by sciences, I always try to balance the understanding of technical
               applications and its social and economic impacts.
           </p> */}
@@ -81,26 +81,26 @@ export default class About extends React.Component {
               I thrive on creative challenges and enjoy building strong relationships along the way.
               Explore my work below, and contact me directly to learn more!
           </p>
-          <ArrowWrapper>
-      <ArrowCenter>
-        <ArrowLink href='#projects'>
-          <Arrow
-            width="100"
-            height="100"
-            viewBox="-32 -40 100 100"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
-              fillRule="nonzero"
-            />
-          </Arrow>
-        </ArrowLink>
-      </ArrowCenter>
-    </ArrowWrapper>
+            <ArrowWrapper>
+              <ArrowCenter>
+                <ArrowLink href='#projects'>
+                  <Arrow
+                    width="100"
+                    height="100"
+                    viewBox="-32 -40 100 100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
+                      fillRule="nonzero"
+                    />
+                  </Arrow>
+                </ArrowLink>
+              </ArrowCenter>
+            </ArrowWrapper>
           </Column>
         </Row>
-      
+
       </div>
     )
   }

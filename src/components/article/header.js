@@ -2,8 +2,26 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { Page, Row, Column } from 'hedron'
-
+import ScrollableAnchor from 'react-scrollable-anchor'
+import Section from '../../components/section'
 import ColorBar from '../../components/colorbar'
+
+const StyledSection1 = styled.div`
+  padding-top: 30px;
+  padding-bottom: 10px;
+  @media (max-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  background: #F9F9F9;
+`
+
+
+const Container1 = styled.div`
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+`
 
 const ArticleHeaderSection = styled.div`
   display: flex;
@@ -62,18 +80,22 @@ const ColorDiv = styled.div`
   background: #cdcdcd;
   background-size: cover;
   width: 100%;
-  height: 2vh;
+  height: 10px;
   margin-bottom:6.5vh;
+`
+const TitleProj =styled.h1`
+  font-size:3rem;
 `
 
 const ArticleHeader = ({ props }) => ({
   render() {
     return (
       <div>
-        <ArticleHeaderSection>
+        {/* <ArticleHeaderSection>
           <LogoLink to="/">
             <Logo>Tiphaine Henry</Logo>
           </LogoLink>
+          
           <SocialIconWrapper>
             <SocialLink href="mailto:tiphaine.henry@aol.com">
               <SocialIcon
@@ -89,8 +111,10 @@ const ArticleHeader = ({ props }) => ({
               </SocialIcon>
             </SocialLink>
           </SocialIconWrapper>
-        </ArticleHeaderSection>
-        <ColorDiv></ColorDiv>
+        </ArticleHeaderSection> */}
+        <ScrollableAnchor id={'home'}>
+        <StyledSection1>
+        <Container1>
         <Link to="/">
           <BackArrow
             width="28"
@@ -104,15 +128,18 @@ const ArticleHeader = ({ props }) => ({
             />
           </BackArrow>
         </Link>
+        
         <Row justifyContent="center">
           <Title>
-            <h1>
+            <TitleProj>
               {this.props.title}
-            </h1>
+            </TitleProj>
           </Title>
           <ColorBar color="#A6FFD7" />
         </Row>
-        <ColorDiv></ColorDiv>
+        </Container1>
+      </StyledSection1>
+        </ScrollableAnchor>
       </div>
     )
   },

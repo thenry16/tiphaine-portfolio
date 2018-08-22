@@ -7,13 +7,17 @@ import Link from 'gatsby-link'
 import { Page, Row, Column } from 'hedron'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import ScrollableAnchor from 'react-scrollable-anchor'
+import Section from '../components/section'
+import ColorBar from '../components/colorbar'
+import BamLogo from '../img/bamlogo'
+import Project from '../components/project'
 
 const EmbedContainer = styled.div`
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  width: 100%;
+  width: 100%;+
   height: auto;
   @media (min-width: 1000px) {
     width: 1000px;
@@ -137,15 +141,31 @@ line-height: 1.1;`
 const Wrapper = styled.div`
   margin-bottom:5vh; 
 `
+const WrapperTab = styled.div`
+margin-left: 12%;
+margin-right: 5%;
+`
 const ArrowWrapper = styled.div`
   display: none;
-  position: absolute;
-  bottom: 32px;
+  position: relative;
+  bottom: 22px;
   @media (min-width: 500px) {
     display: block;
   }
   @media (min-width: 768px) {
-    bottom: 32px;
+    bottom: 22px;
+  }
+  width: 100%;
+`
+const ArrowWrapperTop = styled.div`
+  display: none;
+  position: relative;
+  bottom: -22px;
+  @media (min-width: 500px) {
+    display: block;
+  }
+  @media (min-width: 768px) {
+    bottom: -22px;
   }
   width: 100%;
 `
@@ -169,120 +189,255 @@ const Arrow = styled.svg`
     visibility: visible;
   }
 `
+const Section1 = styled.div`
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media (max-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+`
+
+const StyledSection1 = styled(Section1)`
+  &:nth-of-type(2n+1) {
+    background: #F9F9F9;
+  }
+`
+
+const Container1 = styled.div`
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+`
+const ColorBarDivCoucou = styled.div`
+  height: 12px;
+  width: 64px;
+  background: ${props => props.color};
+  margin-top: -18px;
+  margin-bottom: 8px;
+`
+
+
+
 const MoveSafe = () => ({
   render() {
     return (
       <div>
         <Header title="MoveSafe" />
+        <StyledSection1>
+          <Wrapper></Wrapper>
+
         <ContentWrapper>
           <h3 id="toc_0">Guiding you through every walk!</h3>
-
-          <p>
+          <Project
+            logo={BamLogo()}
+            abstract="People often want to avoid dangerous neighborhoods while walking,
+            but don’t know the dangerous areas around them.
+            Our app provides safe paths, so that users can reach their destination worry-free!
+            Unlike traditional maps, we incorporate safety information with available paths."
+          />
+          {/* <p>
             People often want to avoid dangerous neighborhoods while walking,
             but don’t know the dangerous areas around them.
             Our app provides safe paths, so that users can reach their destination worry-free!
             Unlike traditional maps, we incorporate safety information with available paths.
-          </p>
+          </p> */}
+        <ArrowWrapperTop>
+          <ArrowCenter>
+            <ArrowLink href='#description'>
+              <Arrow
+                width="100"
+                height="100"
+                viewBox="-32 -40 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
+                  fillRule="nonzero"
+                />
+              </Arrow>
+            </ArrowLink>
+          </ArrowCenter>
+        </ArrowWrapperTop>
         </ContentWrapper>
-        <ContentWrapper>
+        </StyledSection1>
+        <ScrollableAnchor id={'description'}>
+          <StyledSection1>
+            <Container1>
+              <ContentWrapper>
+                <Row>
+                  <Column>
+                    <h3>3 simple steps</h3>
+                    <ColorBarDivCoucou color="#A6FFD7" />
+                  </Column>
+                </Row>
+                <Row>
+                  <StyledColumn2>
+                    <Styledh4>Search</Styledh4>
+                    <img src="/movesafe/homePage.jpg" />
+                  </StyledColumn2>
+                  <StyledColumn2>
+                    <Styledh4>Choose</Styledh4>
+                    <img src="/movesafe/mapScreen.jpg" />
+                  </StyledColumn2>
+                  <StyledColumn2>
+                    <Styledh4>Walk</Styledh4>
+                    <img src="/movesafe/routingScreen.jpg" />
+                  </StyledColumn2>
+                </Row>
+              </ContentWrapper>
+              <ArrowWrapper>
+                <ArrowCenter>
+                  <ArrowLink href='#process'>
+                    <Arrow
+                      width="100"
+                      height="100"
+                      viewBox="-32 -40 100 100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
+                        fillRule="nonzero"
+                      />
+                    </Arrow>
+                  </ArrowLink>
+                </ArrowCenter>
+              </ArrowWrapper>
+            </Container1>
+          </StyledSection1>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'process'}>
+          <ContentWrapper>
+            <Row>
+              <Column>
+                <h3>The Creation Process</h3>
+                <ColorBarDivCoucou color="#A6FFD7" />
+              </Column>
+            </Row>
+            <p>
+              Developped for a Human Computer Interaction quarter project led by
+              Pr. Scott Klemmer at the University of California,
+              MoveSafe was realized thanks to the collaboration of two
+              teammates.
+          </p>
+            <h4>
+              Technologies employed
+          </h4>
+            <p>
+              - HTML5, Bootstrap, CSS<br />
+              - Ajax, React.js, JavaScript, Heroku<br />
+              - Google Maps API
+          </p>
+            <ArrowWrapper>
+              <ArrowCenter>
+                <ArrowLink href='#build'>
+                  <Arrow
+                    width="100"
+                    height="100"
+                    viewBox="-32 -40 100 100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
+                      fillRule="nonzero"
+                    />
+                  </Arrow>
+                </ArrowLink>
+              </ArrowCenter>
+            </ArrowWrapper>
+          </ContentWrapper>
+        </ScrollableAnchor>
+        <Section>
+        <ScrollableAnchor id={'build'}>
+          <ContentWrapper>
+            
+              <Row>
+                <Column>
+                  <h3>Building the App</h3>
+                  <ColorBarDivCoucou color="#A6FFD7" />
+                </Column>
+              </Row>
+          </ContentWrapper>
+          </ScrollableAnchor>
 
+          <WrapperTab>
+            <div>
+            <Row debug={true}>
+              <StyledColumnTitle1>
+                <h5>
+                  Storyboard
+          </h5>
+              </StyledColumnTitle1>
+              <StyledColumnTitle2>
+                <h5>
+                  Prototyping
+          </h5>
+              </StyledColumnTitle2>
+              <StyledColumnTitle3>
+                <h5>
+                  User Testing
+          </h5>
+              </StyledColumnTitle3>
+            </Row>
+            <StyledRow debug={true}>
+              <StyledColumn1>
+                <p>
+                  We came up with a story board to specify the functionality of our app.
+                  The story board features a persona traveling to an unfamiliar city, who wishes she has an app telling her which path she should choose to walk to her destination safely.
+          </p>
+              </StyledColumn1>
+              <StyledColumn2>
+                <p>
+                  Our team developed 3 paper prototypes.
+                  The first two aimed to determine what functionalities we wanted to include in our app.
+                  Using their feedbacks, we developed a final version of the paper prototype on which we based the skeleton of our app.
+          </p>
+
+              </StyledColumn2>
+              <StyledColumn3>
+                <h6>
+                  Task Driven
+          </h6>
+                <p>
+                  Multiple users had to enter into the searchbar two places and then select the safest path.
+          </p>
+                <h6>
+                  A/B Testing
+          </h6>
+                <p>
+                  We created two different homepages and determined which one generated the most searches. 
+          </p>
+              </StyledColumn3>
+            </StyledRow>
+            </div>
+            <ArrowWrapper>
+              <ArrowCenter>
+                <ArrowLink href='#challenges'>
+                  <Arrow
+                    width="100"
+                    height="100"
+                    viewBox="-32 -40 100 100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
+                      fillRule="nonzero"
+                    />
+                  </Arrow>
+                </ArrowLink>
+              </ArrowCenter>
+            </ArrowWrapper>
+          </WrapperTab>
+        </Section>
+
+<ScrollableAnchor id={'challenges'}>
+        <ContentWrapper>
           <Row>
-            <StyledColumn2>
-              <Styledh4>Search</Styledh4>
-              <img src="/movesafe/homePage.jpg" />
-            </StyledColumn2>
-            <StyledColumn2>
-              <Styledh4>Choose</Styledh4>
-              <img src="/movesafe/mapScreen.jpg" />
-            </StyledColumn2>
-            <StyledColumn2>
-              <Styledh4>Walk</Styledh4>
-              <img src="/movesafe/routingScreen.jpg" />
-            </StyledColumn2>
+            <Column>
+              <h3>Challenges</h3>
+              <ColorBarDivCoucou color="#A6FFD7" />
+            </Column>
           </Row>
-          {/* <Frame
-              src="http://a10-movesafe.herokuapp.com" >
-              <p>
-                <a href="http://a10-movesafe.herokuapp.com">
-                  Un lien à utiliser dans les cas où les navigateurs ne supportent
-			            pas les <i>iframes</i>.
-			          </a>
-              </p>
-            </Frame> */}
-        </ContentWrapper>
-    
-        <ContentWrapper>
-          <h3 id="toc_2">
-            The Creation Process
-          </h3>
-          <p>
-            Developped for a Human Computer Interaction quarter project led by
-            Pr. Scott Klemmer at the University of California,
-            MoveSafe was realized thanks to the collaboration of two
-            other teammates, Megan Golbeck and Yiyuan Ma.
-          </p>
-          <Wrapper />
-          <h4>
-            Building the app
-          </h4>
-          <Row debug={true}>
-            <StyledColumnTitle1>
-              <h5>
-                Storyboard
-          </h5>
-            </StyledColumnTitle1>
-            <StyledColumnTitle2>
-              <h5>
-                Prototyping
-          </h5>
-            </StyledColumnTitle2>
-            <StyledColumnTitle3>
-              <h5>
-                User Testing
-          </h5>
-            </StyledColumnTitle3>
-          </Row>
-          <StyledRow debug={true}>
-            <StyledColumn1>
-              <p>
-                We came up with a story board to specify the functionality of our app.
-                The story board features a persona traveling to an unfamiliar city, who wishes she has an app telling her which path she should choose to walk to her destination safely.
-          </p>
-            </StyledColumn1>
-            <StyledColumn2>
-              <p>
-                Our team developed 3 paper prototypes.
-                The first two aimed to determine what functionalities we wanted to include in our app.
-                Using their feedbacks, we developed a final version of the paper prototype on which we based the skeleton of our app.
-          </p>
-
-            </StyledColumn2>
-            <StyledColumn3>
-              <h6>
-                Task Driven
-          </h6>
-              <p>
-                We gave multiple people the same task to complete using our application. The user had to enter in two places and select the safest path.
-          </p>
-              <h6>
-                A/B Testing
-          </h6>
-              <p>
-                We created two different homepages and determined which one generated the most searches. We also incorporated the feedback from the users.
-          </p>
-            </StyledColumn3>
-          </StyledRow>
-          <h4>
-            Technologies employed
-          </h4>
-          <p>
-            - HTML5, Bootstrap, CSS<br />
-            - Ajax, React.js, JavaScript, Heroku<br />
-            - Google Maps API
-          </p>
-          <Wrapper />
-          <h3>Challenges
-          </h3>
           <p>The challenges we faced were to find a good way to display
             safe areas on a map. This implied loading crime data released by the State of California
             as well as working on a customed map layer displaying this information.
@@ -290,17 +445,34 @@ const MoveSafe = () => ({
           <p>
             I focused on the user needs study, on the importation and specificities of
             Google Maps' API as well as the overall design of the app.
-            A work still needs to be done on exporting the algorithm and standardizing it to other States / countries.
           </p>
         </ContentWrapper>
-       
+        </ScrollableAnchor>
+
         <Wrapper />
 
         <StyledColumn>
           <a href="/moveApp" target="_blank" >Try it yourself</a>
         </StyledColumn>
         <Wrapper />
-
+        <ArrowWrapper>
+          <ArrowCenter>
+            <ArrowLink href='#home'>
+              <Arrow
+                width="100"
+                height="100"
+                viewBox="-68 -100 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
+                  fillRule="nonzero"
+                  transform = "rotate(180)"
+                />
+              </Arrow>
+            </ArrowLink>
+          </ArrowCenter>
+        </ArrowWrapper>
         <Footer />
       </div>
     )

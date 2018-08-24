@@ -231,6 +231,20 @@ const StyledSection1 = styled(Section1)`
     background: #F9F9F9;
   }
 `
+const Section1Top = styled.div`
+  padding-top: 50px;
+  padding-bottom: 10px;
+  @media (max-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+`
+const StyledSectionTop = styled(Section1Top)`
+  &:nth-of-type(2n+1) {
+    background: #F9F9F9;
+  }
+`
+
 const Container1 = styled.div`
   max-width: 1600px;
   margin-left: auto;
@@ -260,6 +274,7 @@ const TwoCols1 = styled(Column)`
   margin-right:auto;
   margin-top:30px;
 `;
+
 const MoveSafe = () => ({
   render() {
     return (
@@ -269,11 +284,11 @@ const MoveSafe = () => ({
 
 
        {/**************************************************************************************************************** */}   
-        <StyledSection1>
+        <StyledSectionTop>
           <Wrapper></Wrapper>
 
         <ContentWrapper>
-          <h3 id="toc_0">Guiding you through every walk!</h3>
+          <h3 >Guiding you through every walk!</h3>
           <PageDescription
             src="/movesafe/movesafe.jpg"
             abstract="People often want to avoid dangerous neighborhoods while walking,
@@ -305,7 +320,7 @@ const MoveSafe = () => ({
           </ArrowCenter>
         </ArrowWrapperTop>
         </ContentWrapper>
-        </StyledSection1>
+        </StyledSectionTop>
 
        {/**************************************************************************************************************** */}        <ScrollableAnchor id={'description'}>
           <StyledSection1>

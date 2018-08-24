@@ -7,19 +7,17 @@ const Container = styled.div`
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
+  width:1500px;
 `
-const Content = styled.div`padding: 0px 16px 26px 16px;`
 
-const ContentWrapper = props => ({
+const ContentWrapperBis = props => ({
   render() {
     return (
       <Container>
-        <Content>
           {props.children}
-        </Content>
       </Container>
     )
   },
 })
 
-export default ContentWrapper
+export default ContentWrapperBis

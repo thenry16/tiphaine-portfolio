@@ -10,7 +10,8 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import Section from '../components/section'
 import ColorBar from '../components/colorbar'
 import BamLogo from '../img/bamlogo'
-import Project from '../components/project'
+import PageDescription from '../components/pageDescription'
+import ContentWrapperBis from '../components/article/contentwrapperBis'
 
 const EmbedContainer = styled.div`
   position: relative;
@@ -27,7 +28,11 @@ const EmbedContainer = styled.div`
     margin-right: auto;
   }
 `
-
+const tabCentered = styled.div`
+  margin-left: auto ;
+  margin-right: auto ;
+  
+`
 const Video = styled.iframe`
   position: absolute;
   top: 0;
@@ -55,15 +60,6 @@ const StyledColumn = styled(Column)`
   font-family: 'charter','Georgia',serif;
   text-decoration: underline;
 `;
-const StyledColumn1 = styled(Column)`
-  display: block;
-  background-color: #ffffcc;
-  outline: 1px solid #fff;
-  box-sizing: border-box;
-  width: 30%;
-  font-size:2.5vh;
-  margin-right:1%;
-`;
 
 const StyledColumnTitle1 = styled(Column)`
   display: block;
@@ -76,48 +72,81 @@ const StyledColumnTitle1 = styled(Column)`
   margin-right:1%;
 `;
 
+const Styledh3 = styled.h3`
+  margin-top:15px;
+`
+
+const StyledColumnTop = styled(Column)`
+  display: block;
+  background-color: rgba(40,50,255,.1);
+  outline: 1px solid #fff;
+  box-sizing: border-box;
+  width: 30%;
+  font-size:2.5vh;
+  margin-right:1%;
+  margin-left:auto;
+`;
+const StyledColumnMid = styled(Column)`
+  display: block;
+  background-color: rgba(40,50,255,.1);
+  outline: 1px solid #fff;
+  box-sizing: border-box;
+  width: 30%;
+  font-size:15px;
+  margin-right:1%;
+`;
+const StyledColumnRight = styled(Column)`
+  display: block;
+  background-color: rgba(40,50,255,.1);
+  outline: 1px solid #fff;
+  box-sizing: border-box;
+  width: 30%;
+  font-size:2.5vh;
+  margin-right:auto;
+`;
+
+const StyledColumn1 = styled(Column)`
+  display: block;
+  background-color: #ffffcc;
+  outline: 1px solid #fff;
+  box-sizing: border-box;
+  width: 245px;
+  font-size:15px;
+  margin-right:1%;
+  margin-left:auto;
+`;
+
 const StyledColumn2 = styled(Column)`
   display: block;
   background-color: rgba(40,50,255,.1);
   outline: 1px solid #fff;
   box-sizing: border-box;
-  width: 30%;
-  font-size:2.5vh;
+  width: 245px;
+  font-size:15px;
   margin-right:1%;
 `;
-
-const StyledColumnTitle2 = styled(Column)`
-  display: block;
-  background-color: rgba(40,50,255,.1);
-  outline: 1px solid #fff;
-  box-sizing: border-box;
-  width: 30%;
-  height:9vh;
-  font-size:4vh;
-  margin-right:1%;
-`;
-
 const StyledColumn3 = styled(Column)`
   display: block;
   background-color: #ebebe0;
   outline: 1px solid #fff;
   box-sizing: border-box;
-  width: 30%;
-  font-size:2.5vh;
-  margin-right:1%;
+  width: 245px;
+  font-size:15px;
+  margin-right:auto;
 `;
 
-const StyledColumnTitle3 = styled(Column)`
-  display: block;
-  background-color: #ebebe0;
-  outline: 1px solid #fff;
-  box-sizing: border-box;
-  width: 30%;
-  height:9vh;
-  font-size:4vh;
-  margin-right:1%;
+const ColumnTitle = styled(Column)`
+  margin-left:10px;
+  margin-bottom:10px;
 `;
-
+const ColumnTitleV2 = styled(Column)`
+  margin-left:-20px;
+  margin-bottom:10px;
+`;
+const ColumnTitleV3 = styled(Column)`
+  margin-left:-16px;
+  margin-bottom:10px;
+`;
 const StyledRow = styled(Row)`
   margin-bottom:5vh;
 `
@@ -197,13 +226,11 @@ const Section1 = styled.div`
     padding-bottom: 40px;
   }
 `
-
 const StyledSection1 = styled(Section1)`
   &:nth-of-type(2n+1) {
     background: #F9F9F9;
   }
 `
-
 const Container1 = styled.div`
   max-width: 1600px;
   margin-left: auto;
@@ -217,20 +244,38 @@ const ColorBarDivCoucou = styled.div`
   margin-bottom: 8px;
 `
 
-
-
+const TwoCols = styled(Column)`
+  display: block;
+  box-sizing: border-box;
+  width: 40%;
+  margin-left:auto;
+  margin-right:auto;
+  height:300px;
+`;
+const TwoCols1 = styled(Column)`
+  display: block;
+  box-sizing: border-box;
+  width: 55%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:30px;
+`;
 const MoveSafe = () => ({
   render() {
     return (
       <div>
         <Header title="MoveSafe" />
+
+
+
+       {/**************************************************************************************************************** */}   
         <StyledSection1>
           <Wrapper></Wrapper>
 
         <ContentWrapper>
           <h3 id="toc_0">Guiding you through every walk!</h3>
-          <Project
-            logo={BamLogo()}
+          <PageDescription
+            src="/movesafe/movesafe.jpg"
             abstract="People often want to avoid dangerous neighborhoods while walking,
             but don’t know the dangerous areas around them.
             Our app provides safe paths, so that users can reach their destination worry-free!
@@ -261,29 +306,30 @@ const MoveSafe = () => ({
         </ArrowWrapperTop>
         </ContentWrapper>
         </StyledSection1>
-        <ScrollableAnchor id={'description'}>
+
+       {/**************************************************************************************************************** */}        <ScrollableAnchor id={'description'}>
           <StyledSection1>
             <Container1>
               <ContentWrapper>
                 <Row>
-                  <Column>
-                    <h3>3 simple steps</h3>
+                  <ColumnTitle>
+                    <Styledh3>3 simple steps</Styledh3>
                     <ColorBarDivCoucou color="#A6FFD7" />
-                  </Column>
+                  </ColumnTitle>
                 </Row>
                 <Row>
-                  <StyledColumn2>
+                  <StyledColumnTop>
                     <Styledh4>Search</Styledh4>
                     <img src="/movesafe/homePage.jpg" />
-                  </StyledColumn2>
-                  <StyledColumn2>
+                  </StyledColumnTop>
+                  <StyledColumnMid>
                     <Styledh4>Choose</Styledh4>
                     <img src="/movesafe/mapScreen.jpg" />
-                  </StyledColumn2>
-                  <StyledColumn2>
+                  </StyledColumnMid>
+                  <StyledColumnRight>
                     <Styledh4>Walk</Styledh4>
                     <img src="/movesafe/routingScreen.jpg" />
-                  </StyledColumn2>
+                  </StyledColumnRight>
                 </Row>
               </ContentWrapper>
               <ArrowWrapper>
@@ -305,14 +351,16 @@ const MoveSafe = () => ({
               </ArrowWrapper>
             </Container1>
           </StyledSection1>
-        </ScrollableAnchor>
+        </ScrollableAnchor>       {/**************************************************************************************************************** */}
+
         <ScrollableAnchor id={'process'}>
+        <StyledSection1>
           <ContentWrapper>
             <Row>
-              <Column>
-                <h3>The Creation Process</h3>
+              <ColumnTitleV2>
+                <Styledh3>The Creation Process</Styledh3>
                 <ColorBarDivCoucou color="#A6FFD7" />
-              </Column>
+              </ColumnTitleV2>
             </Row>
             <p>
               Developped for a Human Computer Interaction quarter project led by
@@ -320,7 +368,14 @@ const MoveSafe = () => ({
               MoveSafe was realized thanks to the collaboration of two
               teammates.
           </p>
-            <h4>
+          <Row>
+              <TwoCols>
+              <img 
+                src="/movesafe/LogoMoveSafe.jpg"
+                width="250px"/>
+              </TwoCols>
+              <TwoCols1>
+              <h4>
               Technologies employed
           </h4>
             <p>
@@ -328,6 +383,9 @@ const MoveSafe = () => ({
               - Ajax, React.js, JavaScript, Heroku<br />
               - Google Maps API
           </p>
+              </TwoCols1>
+            </Row>
+
             <ArrowWrapper>
               <ArrowCenter>
                 <ArrowLink href='#build'>
@@ -346,56 +404,38 @@ const MoveSafe = () => ({
               </ArrowCenter>
             </ArrowWrapper>
           </ContentWrapper>
+          </StyledSection1>
         </ScrollableAnchor>
-        <Section>
+       {/**************************************************************************************************************** */}         
+        <StyledSection1>
         <ScrollableAnchor id={'build'}>
-          <ContentWrapper>
-            
+        <Container1>
+          <ContentWrapperBis>
               <Row>
-                <Column>
-                  <h3>Building the App</h3>
+                <ColumnTitleV3>
+                  <Styledh3>Building the App</Styledh3>
                   <ColorBarDivCoucou color="#A6FFD7" />
-                </Column>
+                </ColumnTitleV3>
               </Row>
-          </ContentWrapper>
-          </ScrollableAnchor>
-
-          <WrapperTab>
-            <div>
-            <Row debug={true}>
-              <StyledColumnTitle1>
-                <h5>
-                  Storyboard
-          </h5>
-              </StyledColumnTitle1>
-              <StyledColumnTitle2>
-                <h5>
-                  Prototyping
-          </h5>
-              </StyledColumnTitle2>
-              <StyledColumnTitle3>
-                <h5>
-                  User Testing
-          </h5>
-              </StyledColumnTitle3>
-            </Row>
-            <StyledRow debug={true}>
-              <StyledColumn1>
-                <p>
-                  We came up with a story board to specify the functionality of our app.
+              <Wrapper/>
+                <Row>
+                  <StyledColumn1>
+                    <Styledh4>Storyboard</Styledh4>
+                   <p> We came up with a story board to specify the functionality of our app.
                   The story board features a persona traveling to an unfamiliar city, who wishes she has an app telling her which path she should choose to walk to her destination safely.
-          </p>
-              </StyledColumn1>
-              <StyledColumn2>
-                <p>
+</p>
+                  </StyledColumn1>
+                  <StyledColumn2>
+                    <Styledh4>Prototyping</Styledh4>
+                    <p>
                   Our team developed 3 paper prototypes.
                   The first two aimed to determine what functionalities we wanted to include in our app.
                   Using their feedbacks, we developed a final version of the paper prototype on which we based the skeleton of our app.
           </p>
-
-              </StyledColumn2>
-              <StyledColumn3>
-                <h6>
+                  </StyledColumn2>
+                  <StyledColumn3>
+                    <Styledh4>User Testing</Styledh4>
+                    <h6>
                   Task Driven
           </h6>
                 <p>
@@ -407,36 +447,44 @@ const MoveSafe = () => ({
                 <p>
                   We created two different homepages and determined which one generated the most searches. 
           </p>
-              </StyledColumn3>
-            </StyledRow>
-            </div>
-            <ArrowWrapper>
-              <ArrowCenter>
-                <ArrowLink href='#challenges'>
-                  <Arrow
-                    width="100"
-                    height="100"
-                    viewBox="-32 -40 100 100"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
-                      fillRule="nonzero"
-                    />
-                  </Arrow>
-                </ArrowLink>
-              </ArrowCenter>
-            </ArrowWrapper>
-          </WrapperTab>
-        </Section>
+                  </StyledColumn3>
+                </Row>
+                <Wrapper/>
+                <Wrapper/>
+              <ArrowWrapper>
+                <ArrowCenter>
+                  <ArrowLink href='#challenges'>
+                    <Arrow
+                      width="100"
+                      height="100"
+                      viewBox="-32 -40 100 100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
+                        fillRule="nonzero"
+                      />
+                    </Arrow>
+                  </ArrowLink>
+                </ArrowCenter>
+              </ArrowWrapper>
+              </ContentWrapperBis>
+            </Container1>
+            </ScrollableAnchor>
+</StyledSection1>
 
+       {/**************************************************************************************************************** */}
 <ScrollableAnchor id={'challenges'}>
+<StyledSection1>
+
+  
         <ContentWrapper>
           <Row>
-            <Column>
-              <h3>Challenges</h3>
+           
+            <ColumnTitleV2>
+              <Styledh3>Challenges</Styledh3>
               <ColorBarDivCoucou color="#A6FFD7" />
-            </Column>
+            </ColumnTitleV2>
           </Row>
           <p>The challenges we faced were to find a good way to display
             safe areas on a map. This implied loading crime data released by the State of California
@@ -447,8 +495,9 @@ const MoveSafe = () => ({
             Google Maps' API as well as the overall design of the app.
           </p>
         </ContentWrapper>
+        </StyledSection1>
         </ScrollableAnchor>
-
+       {/**************************************************************************************************************** */} 
         <Wrapper />
 
         <StyledColumn>
@@ -473,6 +522,8 @@ const MoveSafe = () => ({
             </ArrowLink>
           </ArrowCenter>
         </ArrowWrapper>
+
+       {/**************************************************************************************************************** */}
         <Footer />
       </div>
     )

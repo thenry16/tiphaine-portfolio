@@ -8,7 +8,7 @@ import ColorBar from '../../components/colorbar'
 
 const StyledSection1 = styled.div`
   padding-top: 30px;
-  padding-bottom: 10px;
+  height:130px;
   @media (max-width: 768px) {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -62,7 +62,7 @@ const SocialLink = styled.a``
 const BackArrow = styled.svg`
   display: none;
   @media (min-width: 500px) {
-    margin: 24px 0 0 24px;
+    margin: 14px 0 0 24px;
     position: absolute;
     fill: #333;
     :hover {

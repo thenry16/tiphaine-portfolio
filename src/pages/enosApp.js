@@ -170,6 +170,9 @@ line-height: 1.1;`
 const Wrapper = styled.div`
   margin-bottom:5vh; 
 `
+const WrapperBis = styled.div`
+  margin-bottom:3vh; 
+`
 const WrapperTab = styled.div`
 margin-left: 12%;
 margin-right: 5%;
@@ -293,7 +296,7 @@ const EnosApp = () => ({
 
        {/**************************************************************************************************************** */}   
         <StyledSectionTop>
-          <Wrapper></Wrapper>
+          <WrapperBis/>
 
         <ContentWrapper>
           <h3 >An ergonomic platform for the management of Enos configurations files.</h3>
@@ -305,7 +308,7 @@ const EnosApp = () => ({
           />
           <ArrowWrapperTop>
           <ArrowCenter>
-            <ArrowLink href='#description'>
+            <ArrowLink href='#creation'>
               <Arrow
                 width="100"
                 height="100"
@@ -323,16 +326,18 @@ const EnosApp = () => ({
         </ContentWrapper>
         </StyledSectionTop>
 
-       {/**************************************************************************************************************** */}        <ScrollableAnchor id={'description'}>
+       {/**************************************************************************************************************** */}        
+       <ScrollableAnchor id={'creation'}>
           <StyledSection1>
             <Container1>
               <ContentWrapper>
                 <Row>
                   <ColumnTitle>
-                    <Styledh3>Creation of a new configuration</Styledh3>
+                    <Styledh3>Management of a configuration</Styledh3>
                     <ColorBarDivCoucou color="#A6FFD7" />
                   </ColumnTitle>
                 </Row>
+                <WrapperBis/>
                 <Row>
                   <StyledColumnTop>
                     <Styledh4>Edit Networks</Styledh4>
@@ -348,54 +353,7 @@ const EnosApp = () => ({
                   </StyledColumnRight>
                 </Row>
               </ContentWrapper>
-              <ArrowWrapper>
-                <ArrowCenter>
-                  <ArrowLink href='#edit'>
-                    <Arrow
-                      width="100"
-                      height="100"
-                      viewBox="-32 -40 100 100"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
-                        fillRule="nonzero"
-                      />
-                    </Arrow>
-                  </ArrowLink>
-                </ArrowCenter>
-              </ArrowWrapper>
-            </Container1>
-          </StyledSection1>
-        </ScrollableAnchor>      
-        {/**************************************************************************************************************** */}        <ScrollableAnchor id={'description'}>
-        <StyledSection1>
-            <Container1>
-              <ContentWrapper>
-                <Row>
-                  <ColumnTitle>
-                    <Styledh3>Editing a configuration</Styledh3>
-                    <ColorBarDivCoucou color="#A6FFD7" />
-                  </ColumnTitle>
-                </Row>
-                <Row>
-                  <StyledColumnTop>
-                    <Styledh4>Edit Networks</Styledh4>
-                    <img src="/Enos/reseaux.png" />
-                  </StyledColumnTop>
-                  <StyledColumnMid>
-                    <Styledh4>Edit Computers</Styledh4>
-                    <img src="/Enos/computers.png" />
-                  </StyledColumnMid>
-                  <StyledColumnRight>
-                    <Styledh4>Check and Download</Styledh4>
-                    <img src="/Enos/apercu.png" />
-                  </StyledColumnRight>
-                </Row>
-                <p>(creation d'une nouvelle configuration, 
-lister l'ensemble des configurations enregistrées, 
-édition d'une configuration existante et enfin téléchargement d'une configuration au format yaml).</p>
-              </ContentWrapper>
+              <Wrapper/>
               <ArrowWrapper>
                 <ArrowCenter>
                   <ArrowLink href='#process'>
@@ -415,7 +373,7 @@ lister l'ensemble des configurations enregistrées,
               </ArrowWrapper>
             </Container1>
           </StyledSection1>
-        </ScrollableAnchor>       
+        </ScrollableAnchor>      
         {/**************************************************************************************************************** */}
 
         <ScrollableAnchor id={'process'}>

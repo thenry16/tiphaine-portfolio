@@ -1,24 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Page, Row, Column } from 'hedron'
-import Link from 'gatsby-link'
-import Scrollchor from 'react-scrollchor'
-import ColorBar from '../components/colorbar'
 
-import Project from '../components/project'
+import ColorBar from './colorbar'
+
+import WebProj from './webProj'
 
 import MoveSafeLogo from '../img/kellerkindlogo'
 import LifeTimeLogo from '../img/lifetimelogo'
 import BamLogo from '../img/bamlogo'
+import scrollArrow from '../components/scrollArrow'
+import WebProject from '../components/webProj'
+import ContentWrapper from '../components/article/contentwrapper'
+
 const ArrowWrapper = styled.div`
   display: none;
   position: relative;
-  bottom: 16px;
+  top: 18px;
   @media (min-width: 500px) {
     display: block;
   }
   @media (min-width: 768px) {
-    bottom: 16px;
+    top: 18px;
   }
   width: 100%;
 `
@@ -42,30 +45,64 @@ const Arrow = styled.svg`
     visibility: visible;
   }
 `
+
+const StyledColumnTop = styled(Column)`
+  display: block-center;
+  box-sizing: border-box;
+  width: 35%;
+  margin-left: auto ;
+  margin-right: auto ;
+`;
+
+const StyledColumn1 = styled(Column)`
+  display: block-center;
+  box-sizing: border-box;
+  width: 46%;
+  margin-left: auto ;
+  margin-right: auto ;
+  background-color:#fffaf4;
+`;
+const StyledColumn2 = styled(Column)`
+  display: block-center;
+  box-sizing: border-box;
+  width: 46%;
+  margin-left: auto ;
+  margin-right: auto ;
+  background-color:#f1f8ff;
+`;
+
 const Miscellaneous = () => ({
   render() {
     return (
       <div>
+       <div> 
       <Row>
-        <Column xs={12} sm={12} md={12} lg={3} lgShift={1}>
-          <h2>Miscellaneous</h2>
-          <ColorBar color="#A6FFD7" />
-        </Column>
-        <Column sm={12} md={9} lg={7}>
-          <Project
-            logo={BamLogo()}
-            url="/dataAnalysis"
-            title="Challenge Disrupt'Campus"
-            abstract="Entrepreneurship Hackaton, First prize."
-          />
-          <Project
-            logo={LifeTimeLogo()}
-            url="/dataAnalysis"
-            title="African Countries Development"
-            abstract="A study of African countries recent development based on Tableau."
-          />
-        </Column>
+        <StyledColumnTop>
+          <h2>Data Science Projects</h2>
+          <ColorBar color="#fff398" />
+        </StyledColumnTop>
       </Row>
+      <ContentWrapper>
+      <Row>  
+        <StyledColumn1>
+          <WebProject
+            logo={BamLogo()}
+            url="/pulgarcito"
+            title="Pulgarcito"
+            abstract="An AI-centric Entrepreneurship project winner of the Challenge Disrupt'Campus 2018 Hackaton (French only)."
+            />
+        </StyledColumn1> 
+        <StyledColumn2> 
+          <WebProj
+            logo={LifeTimeLogo()}
+            url="/africaDataAnalysis"
+            title="Overview of African Countries Development"
+            abstract="A study of African countries recent development based on the World Bank Data."
+          />
+        </StyledColumn2> 
+      </Row>
+      </ContentWrapper>
+      </div>
       <ArrowWrapper>
       <ArrowCenter>
         <ArrowLink href='#contact'>

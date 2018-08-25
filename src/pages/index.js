@@ -126,11 +126,11 @@ export default class App extends React.Component {
             <Projects />
           </Section>
         </ScrollableAnchor>
-        {/* <ScrollableAnchor id={'miscellaneous'}>
+        <ScrollableAnchor id={'miscellaneous'}>
         <Section>
           <Miscellaneous />
         </Section>
-        </ScrollableAnchor> */}
+        </ScrollableAnchor> 
         <ScrollableAnchor id={'contact'}>
         <Section>
           <Contact />

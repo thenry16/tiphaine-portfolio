@@ -9,7 +9,7 @@ const ProjectWrapper = styled.div`
   @media (max-width: 660px) {
     flex-wrap: wrap;
   }
-    padding-bottom: 25px;
+    padding-bottom: 0px;
 `
 
 const Description = styled.div`@media (max-width: 800px) {margin-top: 32px;}`
@@ -19,12 +19,12 @@ const Title = styled.h3`
   font-size: 1.6em;
   font-weight: 700;
   margin: 0 0 16px 0;
-  padding-top: 25px;
+  padding-top: 10px;
 `
 
 const Abstract = styled.div`margin-bottom: 16px;`
 
-const PageDescription = ({ props }) => ({
+const PageDescriptionBis = ({ props }) => ({
   render() {
     return (
       <ProjectWrapper>
@@ -44,4 +44,4 @@ const PageDescription = ({ props }) => ({
   },
 })
 
-export default PageDescription
+export default PageDescriptionBis

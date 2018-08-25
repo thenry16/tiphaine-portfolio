@@ -10,7 +10,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import Section from '../components/section'
 import ColorBar from '../components/colorbar'
 import BamLogo from '../img/bamlogo'
-import PageDescription from '../components/pageDescription'
+import PageDescriptionBis from '../components/pageDescriptionBis'
 import ContentWrapperBis from '../components/article/contentwrapperBis'
 
 const EmbedContainer = styled.div`
@@ -189,12 +189,12 @@ const ArrowWrapper = styled.div`
 const ArrowWrapperTop = styled.div`
   display: none;
   position: relative;
-  bottom: -22px;
+  bottom: 0px;
   @media (min-width: 500px) {
     display: block;
   }
   @media (min-width: 768px) {
-    bottom: -22px;
+    bottom: 0px;
   }
   width: 100%;
 `
@@ -269,10 +269,18 @@ const TwoCols = styled(Column)`
 const TwoCols1 = styled(Column)`
   display: block;
   box-sizing: border-box;
-  width: 55%;
+  width: 60%;
   margin-left:auto;
   margin-right:auto;
   margin-top:30px;
+`;
+const TwoCols3 = styled(Column)`
+  display: block;
+  box-sizing: border-box;
+  width: 40%;
+  margin-left:-25px;
+  margin-right:auto;
+  height:300px;
 `;
 
 const EnosApp = () => ({
@@ -288,22 +296,14 @@ const EnosApp = () => ({
           <Wrapper></Wrapper>
 
         <ContentWrapper>
-          <h3 >An ergonomic platform for the management
-of Enos configurations files.</h3>
-          <PageDescription
-            src="/movesafe/movesafe.jpg"
-            abstract="People often want to avoid dangerous neighborhoods while walking,
-            but don’t know the dangerous areas around them.
-            Our app provides safe paths, so that users can reach their destination worry-free!
-            Unlike traditional maps, we incorporate safety information with available paths."
+          <h3 >An ergonomic platform for the management of Enos configurations files.</h3>
+          <PageDescriptionBis
+            src="/Enos/cloud.png"
+            abstract="What if you could deploy Cloud Computing Infrastructures based on a Yaml file? 
+            AutoEnos is an Information System allowing the management of Enos configurations. 
+            Through the interface, you can manage the collection of configurations, that is the creation of new configurations and the edition of previous ones."           
           />
-          {/* <p>
-            People often want to avoid dangerous neighborhoods while walking,
-            but don’t know the dangerous areas around them.
-            Our app provides safe paths, so that users can reach their destination worry-free!
-            Unlike traditional maps, we incorporate safety information with available paths.
-          </p> */}
-        <ArrowWrapperTop>
+          <ArrowWrapperTop>
           <ArrowCenter>
             <ArrowLink href='#description'>
               <Arrow
@@ -329,24 +329,72 @@ of Enos configurations files.</h3>
               <ContentWrapper>
                 <Row>
                   <ColumnTitle>
-                    <Styledh3>3 simple steps</Styledh3>
+                    <Styledh3>Creation of a new configuration</Styledh3>
                     <ColorBarDivCoucou color="#A6FFD7" />
                   </ColumnTitle>
                 </Row>
                 <Row>
                   <StyledColumnTop>
-                    <Styledh4>Search</Styledh4>
-                    <img src="/movesafe/homePage.jpg" />
+                    <Styledh4>Edit Networks</Styledh4>
+                    <img src="/Enos/reseaux.png" />
                   </StyledColumnTop>
                   <StyledColumnMid>
-                    <Styledh4>Choose</Styledh4>
-                    <img src="/movesafe/mapScreen.jpg" />
+                    <Styledh4>Edit Computers</Styledh4>
+                    <img src="/Enos/computers.png" />
                   </StyledColumnMid>
                   <StyledColumnRight>
-                    <Styledh4>Walk</Styledh4>
-                    <img src="/movesafe/routingScreen.jpg" />
+                    <Styledh4>Check and Download</Styledh4>
+                    <img src="/Enos/apercu.png" />
                   </StyledColumnRight>
                 </Row>
+              </ContentWrapper>
+              <ArrowWrapper>
+                <ArrowCenter>
+                  <ArrowLink href='#edit'>
+                    <Arrow
+                      width="100"
+                      height="100"
+                      viewBox="-32 -40 100 100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
+                        fillRule="nonzero"
+                      />
+                    </Arrow>
+                  </ArrowLink>
+                </ArrowCenter>
+              </ArrowWrapper>
+            </Container1>
+          </StyledSection1>
+        </ScrollableAnchor>      
+        {/**************************************************************************************************************** */}        <ScrollableAnchor id={'description'}>
+        <StyledSection1>
+            <Container1>
+              <ContentWrapper>
+                <Row>
+                  <ColumnTitle>
+                    <Styledh3>Editing a configuration</Styledh3>
+                    <ColorBarDivCoucou color="#A6FFD7" />
+                  </ColumnTitle>
+                </Row>
+                <Row>
+                  <StyledColumnTop>
+                    <Styledh4>Edit Networks</Styledh4>
+                    <img src="/Enos/reseaux.png" />
+                  </StyledColumnTop>
+                  <StyledColumnMid>
+                    <Styledh4>Edit Computers</Styledh4>
+                    <img src="/Enos/computers.png" />
+                  </StyledColumnMid>
+                  <StyledColumnRight>
+                    <Styledh4>Check and Download</Styledh4>
+                    <img src="/Enos/apercu.png" />
+                  </StyledColumnRight>
+                </Row>
+                <p>(creation d'une nouvelle configuration, 
+lister l'ensemble des configurations enregistrées, 
+édition d'une configuration existante et enfin téléchargement d'une configuration au format yaml).</p>
               </ContentWrapper>
               <ArrowWrapper>
                 <ArrowCenter>
@@ -367,7 +415,8 @@ of Enos configurations files.</h3>
               </ArrowWrapper>
             </Container1>
           </StyledSection1>
-        </ScrollableAnchor>       {/**************************************************************************************************************** */}
+        </ScrollableAnchor>       
+        {/**************************************************************************************************************** */}
 
         <ScrollableAnchor id={'process'}>
         <StyledSection1>
@@ -379,32 +428,32 @@ of Enos configurations files.</h3>
               </ColumnTitleV2>
             </Row>
             <p>
-              Developped for a Human Computer Interaction quarter project led by
-              Pr. Scott Klemmer at the University of California,
-              MoveSafe was realized thanks to the collaboration of two
-              teammates.
+              Developped for a Information System project led by
+              Pr. Adrien Lebre at the IMT Atlantique,
+              AutoEnos is the result of a work realized with a teammate.  I focused on the front-end side of the project while my teammate focused on the back-end side of it. 
+
           </p>
           <Row>
-              <TwoCols>
+              <TwoCols3>
               <img 
-                src="/movesafe/LogoMoveSafe.jpg"
-                width="250px"/>
-              </TwoCols>
+                src="/Enos/logoENos.png"
+                width="215px"/>
+              </TwoCols3>
               <TwoCols1>
-              <h4>
+          <h4>
               Technologies employed
           </h4>
             <p>
               - HTML5, Bootstrap, CSS<br />
-              - Ajax, React.js, JavaScript, Heroku<br />
-              - Google Maps API
+              - Javascrip, Ajax <br />
+              - Frameworks: Flask & Heroku 
           </p>
               </TwoCols1>
             </Row>
 
             <ArrowWrapper>
               <ArrowCenter>
-                <ArrowLink href='#build'>
+                <ArrowLink href='#challenges'>
                   <Arrow
                     width="100"
                     height="100"
@@ -422,72 +471,6 @@ of Enos configurations files.</h3>
           </ContentWrapper>
           </StyledSection1>
         </ScrollableAnchor>
-       {/**************************************************************************************************************** */}         
-        <StyledSection1>
-        <ScrollableAnchor id={'build'}>
-        <Container1>
-          <ContentWrapperBis>
-              <Row>
-                <ColumnTitleV3>
-                  <Styledh3>Building the App</Styledh3>
-                  <ColorBarDivCoucou color="#A6FFD7" />
-                </ColumnTitleV3>
-              </Row>
-              <Wrapper/>
-                <Row>
-                  <StyledColumn1>
-                    <Styledh4>Storyboard</Styledh4>
-                   <p> We came up with a story board to specify the functionality of our app.
-                  The story board features a persona traveling to an unfamiliar city, who wishes she has an app telling her which path she should choose to walk to her destination safely.
-</p>
-                  </StyledColumn1>
-                  <StyledColumn2>
-                    <Styledh4>Prototyping</Styledh4>
-                    <p>
-                  Our team developed 3 paper prototypes.
-                  The first two aimed to determine what functionalities we wanted to include in our app.
-                  Using their feedbacks, we developed a final version of the paper prototype on which we based the skeleton of our app.
-          </p>
-                  </StyledColumn2>
-                  <StyledColumn3>
-                    <Styledh4>User Testing</Styledh4>
-                    <h6>
-                  Task Driven
-          </h6>
-                <p>
-                  Multiple users had to enter into the searchbar two places and then select the safest path.
-          </p>
-                <h6>
-                  A/B Testing
-          </h6>
-                <p>
-                  We created two different homepages and determined which one generated the most searches. 
-          </p>
-                  </StyledColumn3>
-                </Row>
-                <Wrapper/>
-                <Wrapper/>
-              <ArrowWrapper>
-                <ArrowCenter>
-                  <ArrowLink href='#challenges'>
-                    <Arrow
-                      width="100"
-                      height="100"
-                      viewBox="-32 -40 100 100"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.647.064L-.01 5.72 18 23.73 36.01 5.72 30.352.065 18 12.417"
-                        fillRule="nonzero"
-                      />
-                    </Arrow>
-                  </ArrowLink>
-                </ArrowCenter>
-              </ArrowWrapper>
-              </ContentWrapperBis>
-            </Container1>
-            </ScrollableAnchor>
-</StyledSection1>
 
        {/**************************************************************************************************************** */}
 <ScrollableAnchor id={'challenges'}>
@@ -502,24 +485,26 @@ of Enos configurations files.</h3>
               <ColorBarDivCoucou color="#A6FFD7" />
             </ColumnTitleV2>
           </Row>
-          <p>The challenges we faced were to find a good way to display
-            safe areas on a map. This implied loading crime data released by the State of California
-            as well as working on a customed map layer displaying this information.
-          </p>
-          <p>
-            I focused on the user needs study, on the importation and specificities of
-            Google Maps' API as well as the overall design of the app.
-          </p>
-        </ContentWrapper>
-        </StyledSection1>
-        </ScrollableAnchor>
-       {/**************************************************************************************************************** */} 
-        <Wrapper />
+          <p>The challenges overcome concern working with Flask framework to generate valid Yaml documents. 
+            With respects to information processing, we worked on the creation of forms and templates 
+            as well as the storage of configurations.</p>
+          <p>A thoughtful ergonomy also needed to be created, in order to: <br/>
+            - Enable the storage and edition of old configurations. <br/>
+            - Facilitate the addition of computers and roles. <br/>
+            - Generate valid documents with the implementation of a syntax checking.<br/>
 
+            </p>
+
+       {/**************************************************************************************************************** */}
+        
+        <Wrapper />
         <StyledColumn>
           <a href="http://enos-app.herokuapp.com" target="_blank" >Try it yourself</a>
         </StyledColumn>
-        <Wrapper />
+        </ContentWrapper>
+        </StyledSection1>
+        </ScrollableAnchor>
+        <StyledSection1>
         <ArrowWrapper>
           <ArrowCenter>
             <ArrowLink href='#home'>
@@ -538,7 +523,7 @@ of Enos configurations files.</h3>
             </ArrowLink>
           </ArrowCenter>
         </ArrowWrapper>
-
+        </StyledSection1>
        {/**************************************************************************************************************** */}
         <Footer />
       </div>

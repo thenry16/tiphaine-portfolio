@@ -95,9 +95,9 @@ const Miscellaneous = () => ({
         <StyledColumn2> 
           <WebProj
             logo={LifeTimeLogo()}
-            url="/africaDataAnalysis"
-            title="Overview of African Countries Development"
-            abstract="A study of African countries recent development based on the World Bank Data."
+            url="/dataAnalysis"
+            title="Statistical analysis of greenhouse gases emission"
+            abstract="Realised with R."
           />
         </StyledColumn2> 
       </Row>

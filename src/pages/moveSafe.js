@@ -280,9 +280,6 @@ const MoveSafe = () => ({
     return (
       <div>
         <Header title="MoveSafe" />
-
-
-
        {/**************************************************************************************************************** */}   
         <StyledSectionTop>
           <Wrapper></Wrapper>

@@ -375,12 +375,12 @@ const DataAnalysis = () => ({
           <ContentWrapper>
             <Row>
               <ColumnTitleV2>
-                <Styledh3>Example of CO2 Emission</Styledh3>
+                <Styledh3>Example of CO2 Emissions Analysis</Styledh3>
                 <ColorBarDivCoucou color="#A6FFD7" />
               </ColumnTitleV2>
             </Row>
           
-          <Styledh4>PCA</Styledh4>
+          <Styledh3>Principal Component Analysis</Styledh3>
           <p>
               After data pre-treatment, 136 features are kept for further analysis. The CO2 worldwide consumptions is function 
               of 6 variables: Forest, Land Use, Transport, Residential, Industry et Energy. </p>
@@ -390,20 +390,21 @@ const DataAnalysis = () => ({
                               <img 
                 src="/DataAnalysis/co2_classification.png"
                 />
-              <h4>a) Interprétation de l’axe 1 </h4>
+              <h4>a) First Axis Interpretation</h4>
               <p>Les variables contribuant le plus à la formation de l’axe 1 sont celles dont les coordonnées sur cet axe sont proches de 1 en valeur absolue. D’après le cercle des corrélations de la figure 4, les variables Energy, Residential, Industry et Transport sont très proches du bord du cercle. Elles sont donc bien représentées dans le plan factoriel considéré. Les valeurs données par la figure 3 confirment cette tendance. Après génération de l’ACP sur R, le premier axe s’exprime en effet par l’expression suivante :  Axe 1 = 0.91 Energy + 0.96 Residential + 0.76 Industry + 0.66 Transport - 0.62 Forest  L’axe 1 oppose la génération de CO2 par les secteurs de l’énergie, de l’industrie, du transport et des résidences à l’absorption de ce dernier par les forêts.  Cet axe, et donc la première composante principale, mesure donc le taux de CO2  généré par les différents domaines d’activité.  De même, les individus contribuant le plus à la formation de l’axe 1 sont ceux dont les coordonnées sur cet axe sont les plus élevées en valeur absolue.  On observe graphiquement 2 pays contribuant très fortement à la production de CO2 pour les secteurs du transport, de l’industrie, de l’énergie et de l’habitat : les USA (231) et la Chine (351 et 41). Cette production de CO2 provient du fait que ces derniers sont très grands consommateurs d’énergie fossile (transport, production manufacturière etc). L’axe 1 reflète donc les domaines et pays rejetant le plus de dioxyde de carbone dans l’atmosphère. 
 </p>
-<h4>b) Interprétation de l’axe 2</h4> 
-<p>L’axe 2 est défini par la variable Land Use, avec une qualité de représentation de -97%. Seuls deux pays contribuent très fortement à la variable Land Use : le Brésil (21) et l’Indonésie (101). Land Use correspond à l’impact de l’homme sur la modification de la nature des terres. Ces deux pays, producteurs respectivement de soja et d’huile de palme sont confrontés à des problématiques de déforestation pour cause d’une demande grandissante de ces produits. Ils sont donc contraints d’augmenter leurs productions proportionnellement. L’axe 2 représente donc les pays effectuant des modifications dans l’usage de leurs terres impliquant une production accrue de CO2. 
-</p>            <Styledh4>Descending Hierarchical Classification</Styledh4>
-          <p>                
+              <h4>b) Interprétation de l’axe 2</h4> 
+              <p>L’axe 2 est défini par la variable Land Use, avec une qualité de représentation de -97%. Seuls deux pays contribuent très fortement à la variable Land Use : le Brésil (21) et l’Indonésie (101). Land Use correspond à l’impact de l’homme sur la modification de la nature des terres. Ces deux pays, producteurs respectivement de soja et d’huile de palme sont confrontés à des problématiques de déforestation pour cause d’une demande grandissante de ces produits. Ils sont donc contraints d’augmenter leurs productions proportionnellement. L’axe 2 représente donc les pays effectuant des modifications dans l’usage de leurs terres impliquant une production accrue de CO2. 
+              </p>            
+              <Styledh3>Descending Hierarchical Classification</Styledh3>
+              <p>                
                 Le prétraitement des données nous a amené à ne conserver que 136 données et à étudier 
                 la consommation mondiale de CO2 en 2010 suivant 6 variables : Forest, Land Use, Transport, Residential, 
                 Industry et Energy. Les données sont des équivalents CO2 exprimées en Gigagramme. 
-              <img 
+                <img 
                 src="/movesafe/LogoMoveSafe.jpg"
                 width="250px"/>
-            </p>
+              </p>
 
             <ArrowWrapper>
               <ArrowCenter>

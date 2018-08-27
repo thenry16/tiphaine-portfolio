@@ -84,7 +84,7 @@ const ColorDiv = styled.div`
   margin-bottom:6.5vh;
 `
 const TitleProj =styled.h1`
-  font-size:3rem;
+  font-size:2.5rem;
 `
 
 const ArticleHeader = ({ props }) => ({

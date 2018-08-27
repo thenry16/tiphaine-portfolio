@@ -10,7 +10,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import Section from '../components/section'
 import ColorBar from '../components/colorbar'
 import BamLogo from '../img/bamlogo'
-import PageDescription from '../components/pageDescription'
+import PageDescriptionBis from '../components/pageDescriptionBis'
 import ContentWrapperBis from '../components/article/contentwrapperBis'
 import ContentWrapperIbiscus from '../components/article/contentwrapperIbiscus'
 
@@ -135,6 +135,15 @@ const StyledColumn3 = styled(Column)`
   font-size:15px;
   margin-right:auto;
 `;
+const StyledColumn4 = styled(Column)`
+  display: block;
+  background-color: #ebebe0;
+  outline: 1px solid #fff;
+  box-sizing: border-box;
+  width: 245px;
+  font-size:15px;
+  margin-right:auto;
+`;
 
 const ColumnTitle = styled(Column)`
   margin-left:10px;
@@ -165,6 +174,34 @@ font-family: 'bebasneue','Helvetica',sans-serif;
 font-weight: bold;
 text-rendering: optimizeLegibility;
 font-size: 1rem;
+line-height: 1.1;`
+const Styledh5 = styled.h4`
+margin-right: 0;
+margin-top: 0;
+padding-bottom: 0;
+padding-left: 0;
+padding-right: 0;
+padding-top: 0;
+margin-bottom: 0.9996rem;
+color: inherit;
+font-family: 'bebasneue','Helvetica',sans-serif;
+font-weight: bold;
+text-rendering: optimizeLegibility;
+font-size: 15px;
+line-height: 1.1;`
+
+const boldair = styled.h4`
+margin-right: 0;
+margin-top: 0;
+padding-bottom: 0;
+padding-left: 0;
+padding-right: 0;
+padding-top: 0;
+color: inherit;
+font-family: 'bebasneue','Helvetica',sans-serif;
+font-weight: bold;
+text-rendering: optimizeLegibility;
+font-size: 12px;
 line-height: 1.1;`
 
 const Wrapper = styled.div`
@@ -261,9 +298,11 @@ const ColorBarDivCoucou = styled.div`
 const TwoCols = styled(Column)`
   display: block;
   box-sizing: border-box;
-  width: 30%;
+  width: 50%;
   margin-left:auto;
   margin-right:auto;
+  font-size:16px;
+  background: #F9F9F9;
 `;
 const TwoCols1 = styled(Column)`
   display: block;
@@ -282,6 +321,54 @@ margin-left:18px;
 margin-right:auto;
 margin-top:30px;
 `
+const StyledColumn41 = styled(Column)`
+  display: block;
+  background-color: #f1ffff;
+  outline: 1px solid #fff;
+  box-sizing: border-box;
+  width: 380px;
+  font-size:15px;
+  margin-right:auto;
+`;
+const StyledColumn42 = styled(Column)`
+  display: block;
+  background-color: #fffffe;
+  outline: 1px solid #fff;
+  box-sizing: border-box;
+  width: 380px;
+  font-size:15px;
+  margin-right:auto;
+`;
+const StyledColumn43 = styled(Column)`
+  display: block;
+  background-color: #fff3f3;
+  outline: 1px solid #fff;
+  box-sizing: border-box;
+  width: 380px;
+  font-size:15px;
+  margin-right:auto;
+`;
+
+const StyledColumn44 = styled(Column)`
+  display: block;
+  background-color:#f5f5f5;
+  outline: 1px solid #fff;
+  box-sizing: border-box;
+  width: 380px;
+  font-size:15px;
+  margin-right:auto;
+`;
+
+const OneCol = styled(Column)`
+  display: block;
+  background-color:#f5f5f5;
+  outline: 1px solid #fff;
+  box-sizing: border-box;
+  width: 100%;
+  font-size:15px;
+  margin-right:auto;
+`;
+
 const DataAnalysis = () => ({
   render() {
     return (
@@ -290,7 +377,7 @@ const DataAnalysis = () => ({
         <StyledSectionTop>
           <ContentWrapperIbiscus>
           <h3>Statistics to gain insight on Global Warming issues</h3>
-          <PageDescription
+          <PageDescriptionBis
             src="/DataAnalysis/Ecology.jpg"
             abstract="Greenhouse gases reduction is a major issue for the years to come. The COP23 that took place in Bonn in 2017 testifies such necessity,
             the conference working on global rules aiming to stem the rise in industrial gases. To assess the situation 
@@ -380,31 +467,62 @@ const DataAnalysis = () => ({
               </ColumnTitleV2>
             </Row>
           
-          <Styledh3>Principal Component Analysis</Styledh3>
+          
+          <Row>
+            <OneCol>
+            <Styledh4>Principal Component Analysis</Styledh4>
           <p>
-              After data pre-treatment, 136 features are kept for further analysis. The CO2 worldwide consumptions is function 
-              of 6 variables: Forest, Land Use, Transport, Residential, Industry et Energy. </p>
+              After data pre-treatment, 136 features are kept for further analysis. 
+              The CO2 worldwide consumptions depends on 6 variables: Forest, Land Use, Transport, 
+              Residential, Industry and Energy. </p>
               <img 
                 src="/DataAnalysis/co2.png"
                 />
-                              <img 
-                src="/DataAnalysis/co2_classification.png"
-                />
-              <h4>a) First Axis Interpretation</h4>
-              <p>Les variables contribuant le plus à la formation de l’axe 1 sont celles dont les coordonnées sur cet axe sont proches de 1 en valeur absolue. D’après le cercle des corrélations de la figure 4, les variables Energy, Residential, Industry et Transport sont très proches du bord du cercle. Elles sont donc bien représentées dans le plan factoriel considéré. Les valeurs données par la figure 3 confirment cette tendance. Après génération de l’ACP sur R, le premier axe s’exprime en effet par l’expression suivante :  Axe 1 = 0.91 Energy + 0.96 Residential + 0.76 Industry + 0.66 Transport - 0.62 Forest  L’axe 1 oppose la génération de CO2 par les secteurs de l’énergie, de l’industrie, du transport et des résidences à l’absorption de ce dernier par les forêts.  Cet axe, et donc la première composante principale, mesure donc le taux de CO2  généré par les différents domaines d’activité.  De même, les individus contribuant le plus à la formation de l’axe 1 sont ceux dont les coordonnées sur cet axe sont les plus élevées en valeur absolue.  On observe graphiquement 2 pays contribuant très fortement à la production de CO2 pour les secteurs du transport, de l’industrie, de l’énergie et de l’habitat : les USA (231) et la Chine (351 et 41). Cette production de CO2 provient du fait que ces derniers sont très grands consommateurs d’énergie fossile (transport, production manufacturière etc). L’axe 1 reflète donc les domaines et pays rejetant le plus de dioxyde de carbone dans l’atmosphère. 
-</p>
-              <h4>b) Interprétation de l’axe 2</h4> 
-              <p>L’axe 2 est défini par la variable Land Use, avec une qualité de représentation de -97%. Seuls deux pays contribuent très fortement à la variable Land Use : le Brésil (21) et l’Indonésie (101). Land Use correspond à l’impact de l’homme sur la modification de la nature des terres. Ces deux pays, producteurs respectivement de soja et d’huile de palme sont confrontés à des problématiques de déforestation pour cause d’une demande grandissante de ces produits. Ils sont donc contraints d’augmenter leurs productions proportionnellement. L’axe 2 représente donc les pays effectuant des modifications dans l’usage de leurs terres impliquant une production accrue de CO2. 
-              </p>            
-              <Styledh3>Descending Hierarchical Classification</Styledh3>
-              <p>                
-                Le prétraitement des données nous a amené à ne conserver que 136 données et à étudier 
-                la consommation mondiale de CO2 en 2010 suivant 6 variables : Forest, Land Use, Transport, Residential, 
-                Industry et Energy. Les données sont des équivalents CO2 exprimées en Gigagramme. 
-                <img 
-                src="/movesafe/LogoMoveSafe.jpg"
-                width="250px"/>
+                <Styledh5>Clues to read the graphs</Styledh5>
+                <p>The more the coordinates of a variable are close to one in absolute terms when projected on an axis, 
+                the more the variable contributes to the formation of this very axis.
+                The same reasonning can be applied to individuals.</p>
+                </OneCol>
+                </Row>
+<Row>
+  <TwoCols>
+              <Styledh5>A) First Axis Interpretation</Styledh5>
+              <p> From the Correlation Circle, 4 sectors- Energy, Residential, 
+                Industry and Transportation- mainly embody the first axis. <br/>
+                An opposition is drawn between these sectors and Forest uptake: the first axis represents CO2 emission.
+                </p>
+                <p>  
+                  According to PCA, the two major countries that contribute to Energy, Transport, Industry and Transportation 
+                  CO2 emission are the USA (n°231 according to FAO classification) and China (n°41 and n°351). 
+                  A first explanation is that these two countries are great consumers of fossil energy, be it commuting 
+                  or manufacturing output. 
+                </p> 
+</TwoCols>
+<TwoCols>
+              <Styledh5>B) Second Axis Interpretation</Styledh5> 
+              <p>
+                Axis 2 is represented by Land Use with -97%. It corresponds to the human modification of lands functions.
               </p>
+              <p>
+                Brazil (n°21) and Indonesia (n°101) mainly contribute to the axis. Producing respectively Soy and Palm oil, 
+                deforestation occurs, as demand for these products is in expansion. 
+              </p>            
+</TwoCols>
+</Row>
+              
+              <Row>
+                <OneCol>
+                <Styledh4>Descending Hierarchical Classification</Styledh4>
+              <p>                
+                A hierarchical classification helps group countries with the same CO2 emission characteristics.
+              The clustering ratio which equals 0.97 attests of a good classification quality. The above observations
+              are corroborated, with USA and China on the one hand, and Brazil and Indonesia on the other hand.
+                <img 
+                src="/DataAnalysis/co2_classification.png"/>
+              </p>
+              </OneCol>
+              </Row>
+
 
             <ArrowWrapper>
               <ArrowCenter>
@@ -437,38 +555,50 @@ const DataAnalysis = () => ({
                   <ColorBarDivCoucou color="#A6FFD7" />
                 </ColumnTitleV3>
               </Row>
-              <Wrapper/>
                 <Row>
-                  <StyledColumn1>
-                    <Styledh4>Storyboard</Styledh4>
-                   <p> We came up with a story board to specify the functionality of our app.
-                  The story board features a persona traveling to an unfamiliar city, who wishes she has an app telling her which path she should choose to walk to her destination safely.
-</p>
-                  </StyledColumn1>
-                  <StyledColumn2>
-                    <Styledh4>Prototyping</Styledh4>
-                    <p>
-                  Our team developed 3 paper prototypes.
-                  The first two aimed to determine what functionalities we wanted to include in our app.
-                  Using their feedbacks, we developed a final version of the paper prototype on which we based the skeleton of our app.
-          </p>
-                  </StyledColumn2>
-                  <StyledColumn3>
-                    <Styledh4>User Testing</Styledh4>
-                    <h6>
-                  Task Driven
-          </h6>
-                <p>
-                  Multiple users had to enter into the searchbar two places and then select the safest path.
-          </p>
-                <h6>
-                  A/B Testing
-          </h6>
-                <p>
-                  We created two different homepages and determined which one generated the most searches. 
-          </p>
-                  </StyledColumn3>
+                  <StyledColumn41>
+                  <Styledh4>
+              CO2
+              </Styledh4>    
+              <boldair> Sectors:</boldair> Energy, Transportation, Industry, Residential<br/>
+              <boldair>Major Emissions:</boldair> China, USA (Manufacturing output and transportation)<br/>
+<boldair> Land Use Modifications:</boldair> Brazil, Indonesia (soy and palm oil culture, deforestation issues)
+</StyledColumn41>
+<StyledColumn42>
+                  <Styledh4>
+              N2O 
+              </Styledh4>    
+              <p> 
+              <boldair> Sectors:</boldair> Agriculture, Energy, Residential, Industry, Waste, Transport & Other sources<br/>
+              <boldair>Major Emissions:</boldair> China, USA (soil fertilization)
+</p> 
+                  
+                  </StyledColumn42>
+                  <StyledColumn43>
+
+<Styledh4>
+              CH4 
+              </Styledh4>  
+              <p> 
+              <boldair> Sectors:</boldair> Waste, Agriculture, Energy, Residential, Industry & Transport<br/>
+<boldair>Major Emissions:</boldair> USA, China, India, Russia (agriculture & waste) <br/>
+<boldair> Land Use Modifications:</boldair> Brazil, Canada (breeding)
+</p> 
+
+                  </StyledColumn43>
+                  <StyledColumn44>
+
+
+<Styledh4>
+F gas 
+              </Styledh4>   
+<p> 
+<boldair>Major Emissions:</boldair> USA, China, Japan, Russia <br/>
+<boldair> Sources:</boldair> refrigeration equipment, aerosols, foam & fire protection
+</p>  
+                  </StyledColumn44>
                 </Row>
+
                 <Wrapper/>
                 <Wrapper/>
               <ArrowWrapper>

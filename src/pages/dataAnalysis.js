@@ -361,13 +361,18 @@ const StyledColumn44 = styled(Column)`
 
 const OneCol = styled(Column)`
   display: block;
-  background-color:#f5f5f5;
+  background-color:#F9F9F9;
   outline: 1px solid #fff;
   box-sizing: border-box;
   width: 100%;
   font-size:15px;
   margin-right:auto;
 `;
+
+const RowPadBot = styled(Row)`
+padding-bottom:15px;
+`
+
 
 const DataAnalysis = () => ({
   render() {
@@ -484,7 +489,7 @@ const DataAnalysis = () => ({
                 The same reasonning can be applied to individuals.</p>
                 </OneCol>
                 </Row>
-<Row>
+<RowPadBot>
   <TwoCols>
               <Styledh5>A) First Axis Interpretation</Styledh5>
               <p> From the Correlation Circle, 4 sectors- Energy, Residential, 
@@ -508,7 +513,7 @@ const DataAnalysis = () => ({
                 deforestation occurs, as demand for these products is in expansion. 
               </p>            
 </TwoCols>
-</Row>
+</RowPadBot>
               
               <Row>
                 <OneCol>
@@ -645,6 +650,7 @@ F gas
             Sparse data might however reduce the precision of the PCA and Hierarchical Classification. 
             Taking into account the size of the population could also introduce some nuance, allowing a finer-grained 
             analysis.          </p>
+            <WrapperTab/>
           <h4>Going Further:
             </h4>
           <a href="/documents/ghanalysis.pdf" download="THenry_2017_GreenhouseGases.pdf">Read the complete analysis (French only)</a><br/>

@@ -6,9 +6,6 @@ import ColorBar from './colorbar'
 
 import WebProj from './webProj'
 
-import MoveSafeLogo from '../img/kellerkindlogo'
-import LifeTimeLogo from '../img/lifetimelogo'
-import BamLogo from '../img/bamlogo'
 import scrollArrow from '../components/scrollArrow'
 import WebProject from '../components/webProj'
 import ContentWrapper from '../components/article/contentwrapper'
@@ -86,7 +83,6 @@ const Miscellaneous = () => ({
       <Row>  
         <StyledColumn1>
           <WebProject
-            logo={BamLogo()}
             url="/pulgarcito"
             title="Pulgarcito"
             abstract="An AI-centric Entrepreneurship project winner of the Challenge Disrupt'Campus 2018 Hackaton (French only)."
@@ -94,7 +90,6 @@ const Miscellaneous = () => ({
         </StyledColumn1> 
         <StyledColumn2> 
           <WebProj
-            logo={LifeTimeLogo()}
             url="/dataAnalysis"
             title="Statistical analysis of greenhouse gases emission"
             abstract="Realised with R."

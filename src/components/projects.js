@@ -5,10 +5,6 @@ import { Page, Row, Column } from 'hedron'
 import ColorBar from './colorbar'
 
 import WebProj from './webProj'
-
-import MoveSafeLogo from '../img/kellerkindlogo'
-import LifeTimeLogo from '../img/lifetimelogo'
-import BamLogo from '../img/bamlogo'
 import scrollArrow from '../components/scrollArrow'
 
 
@@ -95,7 +91,6 @@ const Projects = () => ({
       <Row>  
         <StyledColumn1>
           <WebProj
-            logo={LifeTimeLogo()}
             url="/moveSafe"
             title="MoveSafe"
             abstract="An interactive web map displaying the safest walking paths within California."
@@ -103,7 +98,6 @@ const Projects = () => ({
         </StyledColumn1> 
         <StyledColumn2> 
           <WebProj
-            logo={MoveSafeLogo()}
             url="/autoEnos"
             title="AutoEnos"
             abstract="An ergonomic platform for the management of Enos configurations files."
@@ -111,7 +105,6 @@ const Projects = () => ({
         </StyledColumn2> 
         <StyledColumn3> 
           <WebProj
-            logo={BamLogo()}
             url="/ISitsUWalk"
             title="ISitsUWalk"
             abstract="An Android AR app winner of UCSD's 2018 Hackaton. Give AR a chance to make you fit again!"

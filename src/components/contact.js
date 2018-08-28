@@ -4,7 +4,6 @@ import { Page, Row, Column } from 'hedron'
 
 import ColorBar from '../components/colorbar'
 import Project from '../components/project'
-import ScenographicsLogo from '../img/scenographicslogo'
 
 const ContactInfo = styled.div`
   margin-bottom: 10vh;

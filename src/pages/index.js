@@ -11,7 +11,7 @@ import { Page, Row, Column } from 'hedron'
 import Hero from '../components/hero'
 import Section from '../components/section'
 import About from '../components/about'
-import Projects from '../components/Projects'
+import Projects from '../components/projects'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
 

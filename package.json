@@ -7,6 +7,8 @@
   },
   "author": "Tiphaine Henry <tiphaine.henry@aol.com>",
   "dependencies": {
+    "express": "^4.16.3",
+    "foobar": "^1.1.0",
     "gatsby": "^1.8.12",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-google-analytics": "^1.0.7",

@@ -98,9 +98,9 @@ const ArrowLink = styled.a`display: block;`
 
 const Arrow = styled.svg`
   visibility: hidden;
-  fill: #dcdcdc;
+  fill: red;
   :hover {
-    fill: #555;
+    fill: #dcdcdc;
   }
   @media (min-width: 500px) {
     visibility: visible;

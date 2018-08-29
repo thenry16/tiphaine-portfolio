@@ -47,14 +47,21 @@ const ArrowLink = styled.a`display: block;`
 
 const Arrow = styled.svg`
   visibility: hidden;
-  fill: #dcdcdc;
+  fill: red;
+  animation: change 3s step-end both;
   :hover {
-    fill: #555;
+    fill: #dcdcdc;
   }
   @media (min-width: 500px) {
     visibility: visible;
   }
+  @keyframes change {
+    from { fill: #dcdcdc }
+    to   { fill: #555 }
+  }
 `
+
+  
 
 export default class About extends React.Component {
   render() {

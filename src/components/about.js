@@ -47,19 +47,14 @@ const ArrowLink = styled.a`display: block;`
 
 const Arrow = styled.svg`
   visibility: hidden;
-  fill: red;
-  animation: change 3s step-end both;
+  fill: #dcdcdc;
   :hover {
-    fill: #dcdcdc;
+    fill:#A6E7FF;
   }
   @media (min-width: 500px) {
     visibility: visible;
   }
-  @keyframes change {
-    from { fill: #dcdcdc }
-    to   { fill: #555 }
-  }
-`
+  `
 
   
 

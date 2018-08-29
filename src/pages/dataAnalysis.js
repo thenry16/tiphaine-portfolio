@@ -555,7 +555,7 @@ const DataAnalysis = () => ({
           <ContentWrapperBis>
               <Row>
                 <ColumnTitleV3>
-                  <Styledh3>Results</Styledh3>
+                  <Styledh3>Summary of the results</Styledh3>
                   <ColorBarDivCoucou color="#A6FFD7" />
                 </ColumnTitleV3>
               </Row>

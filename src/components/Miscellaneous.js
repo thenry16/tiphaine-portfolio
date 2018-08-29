@@ -13,12 +13,12 @@ import ContentWrapper from '../components/article/contentwrapper'
 const ArrowWrapper = styled.div`
   display: none;
   position: relative;
-  top: 5px;
+  top: -5px;
   @media (min-width: 500px) {
     display: block;
   }
   @media (min-width: 768px) {
-    top: 5px;
+    top: -5px;
   }
   width: 100%;
 `

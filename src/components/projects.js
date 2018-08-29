@@ -143,7 +143,7 @@ const Projects = () => ({
       </div>
       <ArrowWrapper>
       <ArrowCenter>
-        <ArrowLink href='#miscellaneous'>
+        <ArrowLink href='#contact'>
           <Arrow
             width="100"
             height="100"

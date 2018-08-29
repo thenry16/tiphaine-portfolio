@@ -121,9 +121,10 @@ const Miscellaneous = () => ({
       </Row>
       </ContentWrapper>
       </div>
+      */ }
       <ArrowWrapper>
       <ArrowCenter>
-        <ArrowLink href='#contact'>
+        <ArrowLink href='#projects'>
           <Arrow
             width="100"
             height="100"
@@ -137,7 +138,7 @@ const Miscellaneous = () => ({
           </Arrow>
         </ArrowLink>
       </ArrowCenter>
-    </ArrowWrapper> */ }
+    </ArrowWrapper> 
       </div>
     )
   },

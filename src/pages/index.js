@@ -103,16 +103,16 @@ export default class App extends React.Component {
             <About />
           </Section>
         </ScrollableAnchor>
+        <ScrollableAnchor id={'datasciences'}>
+        <Section>
+          <Miscellaneous />
+        </Section>
+        </ScrollableAnchor> 
         <ScrollableAnchor id={'projects'}>
           <Section>
             <Projects />
           </Section>
         </ScrollableAnchor>
-        <ScrollableAnchor id={'miscellaneous'}>
-        <Section>
-          <Miscellaneous />
-        </Section>
-        </ScrollableAnchor> 
         <ScrollableAnchor id={'contact'}>
         <Section>
           <Contact />

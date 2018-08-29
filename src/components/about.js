@@ -85,7 +85,7 @@ export default class About extends React.Component {
         </Row>
             <ArrowWrapper>
               <ArrowCenter>
-                <ArrowLink href='#projects'>
+                <ArrowLink href='#datasciences'>
                   <Arrow
                     width="100"
                     height="100"

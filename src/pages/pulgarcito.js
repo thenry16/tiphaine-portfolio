@@ -357,7 +357,7 @@ const Pulgarcito = () => ({
         <ContainerTop>
           <h3 >L'art de se perdre en chemin</h3>        
           <PageDescription
-            src="/Pulgarcito/pulgarcito.png"
+            src="/Pulgarcito/pulgarcito.jpg"
             abstract="​​Qui n’a jamais subi un trajet en voiture ? Paysages monotones, enfants qui pleurent, aires d’autoroutes…      Osez dire stop. Osez prendre votre temps.  
             ​​Vous êtes unique, pourquoi vos trajets ne le seraient pas ? 
             ​​Avec Pulgarcito, oubliez les trajets monotones. Personnalisez vos arrêts, et prenez le pari de vous surprendre."

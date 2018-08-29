@@ -5,6 +5,7 @@ import { Page, Row, Column } from 'hedron'
 import ColorBar from './colorbar'
 
 import WebProj from './webProj'
+import Project from './project'
 import scrollArrow from '../components/scrollArrow'
 
 
@@ -82,7 +83,35 @@ const Projects = () => ({
     return (
       <div>
        <div> 
-      <Row>
+       <Row>
+        <Column xs={12} sm={12} md={12} lg={3} lgShift={1}>
+          <h2>Web Projects</h2>
+          <ColorBar color="#A6FFD7" />
+        </Column>
+        <Column sm={12} md={9} lg={7}>
+          <Project
+            src="/movesafe/movesafe.jpg"
+            url="/moveSafe"
+            title="MoveSafe"
+            abstract="An interactive web map displaying the safest walking paths within California."
+          />
+          <Project
+            src="/Enos/cloud_computing.jpg"
+            url="/autoenos"
+            title="AutoEnos"
+            abstract="An ergonomic platform for the management of Enos configurations files."
+          />
+          <Project
+            src="/IsitsUwalk/logo.jpg"
+            url="/ISitsUWalk"
+            title="ISitsUWalk"
+            abstract="An Android AR app winner of UCSD's 2018 Hackaton. Give AR a chance to make you fit again!"
+          />
+        </Column>
+      </Row>
+
+
+      {/* <Row>
         <StyledColumnTop>
           <h2>Web Projects</h2>
           <ColorBar color="#fff398" />
@@ -110,7 +139,7 @@ const Projects = () => ({
             abstract="An Android AR app winner of UCSD's 2018 Hackaton. Give AR a chance to make you fit again!"
           />
         </StyledColumn3>
-      </Row>
+      </Row_> */}
       </div>
       <ArrowWrapper>
       <ArrowCenter>

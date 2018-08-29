@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import ReadMore from './readmore'
-import Logo from './projectlogo'
+import ProjectLogo from './projectlogo'
 
 const ProjectWrapper = styled.div`
   padding-bottom: 80px;
@@ -46,9 +46,9 @@ const Project = ({ props }) => ({
     }
     return (
       <ProjectWrapper>
-        <Logo>
-          {this.props.logo}
-        </Logo>
+        <ProjectLogo>
+          {this.props.src}
+        </ProjectLogo>
         <Description>
           <Title>
             {this.props.title}

@@ -16,7 +16,7 @@ const ProfileImageWrapper = styled.div`
   @media (min-width: 768px) {
     background-position: 60% center;
     border: none;
-    height: 470px;
+    height: 400px;
   }
   @media (min-width: 1400px) {
     border: none;
@@ -26,12 +26,12 @@ const ProfileImageWrapper = styled.div`
 const ArrowWrapper = styled.div`
   display: none;
   position: relative;
-  top: 12px;
+  top: 0px;
   @media (min-width: 500px) {
     display: block;
   }
   @media (min-width: 768px) {
-    top: 12px;
+    top: 0px;
   }
   width: 100%;
 `
@@ -81,6 +81,8 @@ export default class About extends React.Component {
               I thrive on creative challenges and enjoy building strong relationships along the way.
               Explore my work below, and contact me directly to learn more!
           </p>
+          </Column>
+        </Row>
             <ArrowWrapper>
               <ArrowCenter>
                 <ArrowLink href='#projects'>
@@ -98,9 +100,6 @@ export default class About extends React.Component {
                 </ArrowLink>
               </ArrowCenter>
             </ArrowWrapper>
-          </Column>
-        </Row>
-
       </div>
     )
   }

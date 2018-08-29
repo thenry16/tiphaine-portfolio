@@ -213,7 +213,7 @@ const EnosApp = () => ({
         <ContentWrapper>
           <h3 >An ergonomic platform for the management of Enos configurations files.</h3>
           <PageDescriptionBis
-            src="/Enos/cloud.png"
+            src="/Enos/cloud_computing.jpg"
             abstract="What if you could deploy Cloud Computing Infrastructures based on a Yaml file? 
             AutoEnos is an Information System allowing the management of Enos configurations. 
             Through the interface, you can manage the collection of configurations, that is the creation of new configurations and the edition of previous ones."           

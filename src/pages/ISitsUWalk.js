@@ -283,7 +283,8 @@ const ISitsUWalk = () => ({
             <p>
               If citylife can be vibrant, it also has some
               downsides. Among them, the lack of exercising. Surfing on the potential of
-              Augmented Reality (AR) to motivate and entertain people, ISitsUWalk wishes to reconcile sport and technology.
+              Augmented Reality (AR) to motivate and entertain people, ISitsUWalk wishes to reconcile sport 
+              and technology.
           </p>
           <SmallWrapper/>
             <ArrowWrapperTop>

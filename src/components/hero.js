@@ -102,9 +102,14 @@ const Arrow = styled.svg`
   :hover {
     fill: #dcdcdc;
   }
+  animation: change 3s step-end both;
   @media (min-width: 500px) {
     visibility: visible;
   }
+  @keyframes change {
+    from { color: #0b04b580 }
+    to   { color: red }
+}
 `
 const SpirographWrapper = styled.div``
 export default class Hero extends React.Component {

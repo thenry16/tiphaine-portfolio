@@ -98,18 +98,13 @@ const ArrowLink = styled.a`display: block;`
 
 const Arrow = styled.svg`
   visibility: hidden;
-  fill: #0b04b580;
+  fill: #dcdcdc;
   :hover {
-    fill: #dcdcdc;
+    fill: #555;
   }
-  animation: change 3s step-end both;
   @media (min-width: 500px) {
     visibility: visible;
   }
-  @keyframes change {
-    from { color: #0b04b580 }
-    to   { color: red }
-}
 `
 const SpirographWrapper = styled.div``
 export default class Hero extends React.Component {

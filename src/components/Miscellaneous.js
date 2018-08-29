@@ -88,7 +88,7 @@ const Miscellaneous = () => ({
           <Project
             src="/DataAnalysis/Ecology.jpg"
             url="/dataAnalysis"
-            title="Statistical analysis of greenhouse gases emission"
+            title="Statistical analysis of greenhouse gases"
             abstract="Realised with R."
           />
         </Column>

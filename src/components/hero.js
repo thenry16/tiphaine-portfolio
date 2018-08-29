@@ -98,7 +98,7 @@ const ArrowLink = styled.a`display: block;`
 
 const Arrow = styled.svg`
   visibility: hidden;
-  fill: red;
+  fill: #0b04b580;
   :hover {
     fill: #dcdcdc;
   }

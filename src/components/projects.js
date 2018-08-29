@@ -98,7 +98,7 @@ const Projects = () => ({
         </StyledColumn1> 
         <StyledColumn2> 
           <WebProj
-            url="/autoEnos"
+            url="/autoenos"
             title="AutoEnos"
             abstract="An ergonomic platform for the management of Enos configurations files."
           />

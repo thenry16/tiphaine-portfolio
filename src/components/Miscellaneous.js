@@ -6,7 +6,6 @@ import ColorBar from './colorbar'
 
 import WebProj from './webProj'
 
-import scrollArrow from '../components/scrollArrow'
 import WebProject from '../components/webProj'
 import ContentWrapper from '../components/article/contentwrapper'
 

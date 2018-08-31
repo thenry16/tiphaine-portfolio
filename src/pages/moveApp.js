@@ -29,8 +29,8 @@ const CenterBlock = styled.div`
 
 const Frame = styled.iframe`
   position: relative;
-  width: 330px;
-  height: 675px;
+  width: 360px;
+  height: 640px;
   border:6px solid lightgrey;
   margin-left:25%;
   `

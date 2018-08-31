@@ -200,12 +200,14 @@ const TwoCols3 = styled(Column)`
   margin-right:auto;
   height:300px;
 `;
-
+const Styleda = styled.a`
+  font-size:20px;
+`;
 const EnosApp = () => ({
   render() {
     return (
       <div>
-        <Header title="AutoEnos" />
+        <Header title="AutoEnos" to='/#projects' />
        {/**************************************************************************************************************** */}   
         <StyledSectionTop>
           <WrapperBis/>
@@ -369,7 +371,7 @@ const EnosApp = () => ({
         
         <Wrapper />
         <StyledColumn>
-          <a href="http://enos-app.herokuapp.com" target="_blank" >Try it yourself</a>
+          <Styleda href="http://enos-app.herokuapp.com" target="_blank" >Try it yourself</Styleda>
         </StyledColumn>
         </ContentWrapper>
         </StyledSection1>

@@ -15,50 +15,11 @@ const StyledSection1 = styled.div`
   }
   background: #F9F9F9;
 `
-
-
 const Container1 = styled.div`
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 `
-
-const ArticleHeaderSection = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin: 24px;
-`
-
-const LogoLink = styled(Link)`
-  text-decoration: none!important;
-  color: #333;
-  :visited, link, active {
-    color: #333;
-    text-decoration: none!important;
-  };
-  :hover {
-    text-decoration: none!important;
-    color: red!important;
-  };
-`
-
-const Logo = styled.div`
-  font-family: 'bebasneue', Helvetica, sans-serif;
-  font-size: 36px;
-  line-height: 32px;
-`
-const SocialIconWrapper = styled.div`display: flex;`
-
-const SocialIcon = styled.svg`
-  margin-left: 8px;
-  fill: #333;
-  :hover {
-    fill: red;
-  }
-`
-
-const SocialLink = styled.a``
-
 const BackArrow = styled.svg`
   display: none;
   @media (min-width: 500px) {
@@ -75,13 +36,6 @@ const BackArrow = styled.svg`
 const Title = styled.div`
   width: 100%;
   text-align: center;
-`
-const ColorDiv = styled.div`
-  background: #cdcdcd;
-  background-size: cover;
-  width: 100%;
-  height: 10px;
-  margin-bottom:6.5vh;
 `
 const TitleProj =styled.h1`
   font-size:2.5rem;
@@ -115,7 +69,7 @@ const ArticleHeader = ({ props }) => ({
         <ScrollableAnchor id={'home'}>
         <StyledSection1>
         <Container1>
-        <Link to="/">
+        <Link to={this.props.to}>
           <BackArrow
             width="28"
             height="42"

@@ -273,12 +273,14 @@ const TwoCols1 = styled(Column)`
   margin-right:auto;
   margin-top:30px;
 `;
-
+const Styleda = styled.a`
+  font-size:20px;
+`;
 const MoveSafe = () => ({
   render() {
     return (
       <div>
-        <Header title="MoveSafe" />
+        <Header title="MoveSafe" to='/#projects'/>
        {/**************************************************************************************************************** */}   
         <StyledSectionTop>
           <Wrapper></Wrapper>
@@ -512,7 +514,7 @@ const MoveSafe = () => ({
         <Wrapper />
 
         <StyledColumn>
-          <a href="/moveApp" target="_blank" >Try it yourself</a>
+          <Styleda href="/moveApp" target="_blank" >Try it yourself</Styleda>
         </StyledColumn>
         <Wrapper />
         <ArrowWrapper>

@@ -60,7 +60,7 @@ export default class Contact extends React.Component {
               tiphaine.henry@etudiant.mines-nantes.fr<br />
               (+33) 6 38 76 98 42<br />
             </Presentation>
-            <a href="/documents/T_Henry_Resume_2018.pdf" download="T_Henry_Resume_2018.pdf">Download Resume</a>
+            <a href="/documents/T_Henry_Resume_2018.pdf" download="T. Henry - Resume 2018.pdf">Download Resume</a>
           </Column>
         </Row>
         <ArrowWrapper>

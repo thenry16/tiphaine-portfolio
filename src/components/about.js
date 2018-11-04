@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Page, Row, Column } from 'hedron'
 
 import ColorBar from '../components/colorbar'
-import ProfileImage from '../img/tiphaine.jpg'
+import ProfileImage from '../img/photo_cv__.png'
 
 const ProfileImageWrapper = styled.div`
   border: none;
